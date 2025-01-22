@@ -1,149 +1,150 @@
 ServerEvents.recipes(event => {
-  // Very rough draft, likely all of this will be replaced
-    if (isExpertMode) {
-        event.replaceInput({ id: /powah/ }, 'powah:dielectric_paste', 'thermal:steel_ingot')
-        event.replaceInput({ id: /powah/ }, 'minecraft:iron_ingot', 'thermal:steel_plate')
-        event.replaceInput({ id: /laserio/ }, 'minecraft:iron_ingot', 'thermal:steel_ingot')
+  // Very rough draft, likely most of this will be reworked
+  if (isExpertMode) {
 
-        event.replaceInput({ output: 'tfmg:heavy_machinery_casing' }, 'tfmg:steel_casing', 'kubejs:basic_casing')
+    // General unthemed overrides
+    event.replaceInput({ id: /powah/ }, 'powah:dielectric_paste', '#c:ingots/steel')
+    event.replaceInput({ id: /powah/ }, 'minecraft:iron_ingot', '#c:plates/steel')
+    event.replaceInput({ id: /laserio/ }, 'minecraft:iron_ingot', '#c:ingots/steel')
+    event.replaceInput({ id: 'modularrouters:modular_router' }, 'modularrouters:blank_module', 'industrialforegoing:machine_frame_pity')
 
-        event.replaceInput({ input: 'industrialforegoing:machine_frame_pity' }, 'industrialforegoing:machine_frame_pity', 'kubejs:basic_casing')
-        event.replaceInput({ input: 'industrialforegoing:simple_machine_frame' }, 'industrialforegoing:simple_machine_frame', 'kubejs:advanced_casing')
-        event.replaceInput({ input: 'industrialforegoing:advanced_machine_frame' }, 'industrialforegoing:advanced_machine_frame', 'kubejs:complex_casing')
+    // Machine casings and otherwise
+    // These generally should have multiple ways to obtain, be it tagged items, alterative recipes, or otherwise
+    // Remember that magic is not required, but can help you to get ahead. Magic recipes should go in their applicable mod js file.
+    // Currently most all of these are just crafting table recipes, but don't be afraid to mix it up. Assemblers, Sequences (once create port is done), Empowerment, etc are all fair game
+    
 
-        event.replaceInput({ id: 'modularrouters:modular_router' }, 'modularrouters:blank_module', 'kubejs:basic_casing') 
-        event.replaceInput({ id: /thermal/ }, 'thermal:machine_frame', 'kubejs:basic_casing')
-
-        event.replaceInput({ id: /actuallyadditions/ }, 'actuallyadditions:iron_casing', 'kubejs:advanced_casing')
-        event.replaceInput({ id: /hostile/ }, '#forge:obsidian', 'kubejs:advanced_casing')
-
-        event.replaceInput({ id: /mekanism/ }, 'mekanism:steel_casing', 'kubejs:complex_casing')
-        event.replaceInput({ id: 'ad_astra:nasa_workbench' }, '#forge:storage_blocks/steel', 'kubejs:complex_casing')
-
-    event.shaped('2x kubejs:basic_casing', [
-        'SSS',
-        'SCS',
-        'SSS'
+    event.shaped('2x industrialforegoing:machine_frame_pity', [
+      'WSW',
+      'SCS',
+      'WSW'
     ], {
-        S: 'thermal:steel_plate',
-        C: 'tfmg:copper_coil',
+      S: '#c:plates/steel',
+      C: 'minecraft:redstone_block',
+      W: '#minecraft:logs'
+    }).id('industrialforegoing:machine_frame_pity')
+
+    event.remove({ output: 'oritech:machine_core_3' })
+    event.shaped('oritech:machine_core_3', [
+      'BRB',
+      'RCR',
+      'BRB'
+    ], {
+      R: 'oritech:carbon_fibre_strands',
+      C: '#poly:energized_metal',
+      B: 'justdirethings:ferricore_ingot' //also tag to some magic metal
+    }).id("oritech:crafting/core3")
+
+    event.shaped('2x energizedpower:basic_machine_frame', [
+      'BBB',
+      'FCF',
+      'BSB'
+    ], {
+      C: 'industrialforegoing:machine_frame_pity',
+      F: 'oritech:magnetic_coil',
+      B: '#c:plates/steel',
+      S: '#c:storage_blocks/silicon'
+    }).id("energizedpower:crafting/basic_machine_frame")
+
+    event.shaped('2x energizedpower:hardened_machine_frame', [
+      'BGB',
+      'FCF',
+      'BGB'
+    ], {
+      C: 'energizedpower:basic_machine_frame',
+      G: '#poly:energized_metal',
+      F: 'oritech:motor',
+      B: '#c:plates/invar',
+    }).id("energizedpower:crafting/hardened_machine_frame")
+
+    event.shaped('rftoolsbase:machine_frame', [
+      'BGB',
+      'FCF',
+      'BGB'
+    ], {
+      C: 'industrialforegoing:machine_frame_pity',
+      G: '#poly:energized_metal',
+      F: '#poly:energized_metal',
+      B: '#c:plates/steel'
+    }).id("rftoolsbase:machine_frame")
+
+    event.shaped('actuallyadditions:iron_casing', [
+      'DGD',
+      'CSC',
+      'DGD'
+    ], {
+      D: 'enderio:dark_steel_ingot',
+      G: '#c:plates/electrum',
+      C: '#poly:basic_caps',
+      S: '#poly:aa_casing_prereq'
+    }).id("actuallyadditions:iron_casing")
+
+    event.replaceInput({ id: /hostile/ }, '#c:obsidians', 'kubejs:predictive_casing')
+    event.shaped('kubejs:predictive_casing', [
+      'BGB',
+      'CSC',
+      'BGB'
+    ], {
+      B: 'actuallyadditions:void_crystal',
+      G: '#poly:plastics',
+      C: '#poly:basic_circuit',
+      S: 'enderio:dark_steel_block',
     })
 
-    event.shaped('2x kubejs:advanced_casing', [
-        'SPS',
-        'CBC',
-        'SPS'
+    event.shaped('6x kubejs:predictive_casing', [
+      'BGB',
+      'CSC',
+      'BGB'
     ], {
-        S: 'thermal:steel_plate',
-        P: '#poly:rubbers',
-        C: '#poly:basic_caps',
-        B: 'kubejs:basic_casing'
+      B: 'actuallyadditions:void_crystal',
+      G: '#poly:plastics',
+      C: 'oritech:super_ai_chip',
+      S: 'enderio:dark_steel_block',
     })
+
+    event.shaped('hostilenetworks:blank_data_model', [
+      'ZZP',
+      'ZCP',
+      'ZZP'
+    ], {
+      Z: '#c:plates/zinc',
+      C: '#poly:basic_circuit',
+      G: 'enderio:dark_steel_block',
+      P: '#poly:plastics'
+    }).id('hostilenetworks:framework')
+
+    event.shaped('6x hostilenetworks:blank_data_model', [
+      'ZZP',
+      'ZCP',
+      'ZZP'
+    ], {
+      Z: '#c:plates/zinc',
+      C: 'oritech:super_ai_chip',
+      G: 'enderio:dark_steel_block',
+      P: '#poly:plastics'
+    }).id('hostilenetworks:framework_alt')
+
+    event.shaped('2x enderio:void_chassis', [
+      'IEI',
+      'CRC',
+      'IEI'
+    ], {
+      C: '#poly:advanced_caps',
+      I: 'enderio:grains_of_infinity',
+      R: 'actuallyadditions:iron_casing',
+      E: 'powah:ender_core'
+    }).id('enderio:void_chassis')
 
     event.shaped('mekanism:metallurgic_infuser', [
-        'SPS',
-        'AOA',
-        'SPS'
+      'SPS',
+      'AOA',
+      'SPS'
     ], {
-        S: 'thermal:steel_plate',
-        P: '#poly:rubbers',
-        O: 'mekanism:block_osmium',
-        A: 'kubejs:advanced_casing'
+      S: '#c:plates/steel',
+      P: '#poly:plastics',
+      O: 'mekanism:block_osmium',
+      A: 'industrialforegoing:machine_frame_simple'
     }).id('mekanism:metallurgic_infuser')
 
-    event.shaped('4x kubejs:empowered_chip', [
-        'SBS',
-        'AOA',
-        'SBS'
-    ], {
-        O: '#poly:empowered_gem',
-        A: 'actuallyadditions:advanced_coil',
-        B: 'actuallyadditions:black_quartz',
-        S: 'actuallyadditions:emeradic_crystal'
-    })
-
-    event.shaped('3x kubejs:industrial_chip', [
-        'SBS',
-        'AOA',
-        'SBS'
-    ], {
-        O: 'industrialforegoing:machine_frame_simple',
-        A: 'industrialforegoing:plastic',
-        B: 'industrialforegoing:conveyor',
-        S: 'industrialforegoing:pink_slime'
-    })
-
-    event.shaped('2x kubejs:prediction_chip', [
-        'SAS',
-        'AOA',
-        'SAS'
-    ], {
-        O: '#poly:cards',
-        A: 'hostilenetworks:overworld_prediction',
-        S: 'hostilenetworks:prediction_matrix'
-    })
-
-    event.shaped('kubejs:advanced_chip', [
-        'SBS',
-        'AOA',
-        'SBS'
-    ], {
-        O: '#poly:cards',
-        A: 'industrialforegoing:plastic',
-        B: 'mekanism:alloy_infused',
-        S: 'mekanism:advanced_control_circuit'
-    })
-
-    event.custom({
-        "type": "industrialforegoing:dissolution_chamber",
-        "input": [
-            {
-                "tag": 'poly:combine_chips'
-              },
-              {
-                "tag": 'poly:combine_chips'
-              },
-              {
-                "tag": 'poly:tech_chips'
-              },
-              {
-                "tag": 'poly:tech_chips'
-              }
-        ],
-        "inputFluid": "{Amount:2000,FluidName:\"industrialforegoing:latex\"}",
-        "output": {
-          "count": 2,
-          "item": "kubejs:complex_casing",
-          "nbt": "{CanCharge:1b,Energy:0L,Fluid:{Amount:0,FluidName:\"biofuel\"},Selected:\"POOR\",Special:0b}"
-        },
-        "processingTime": 400
-      })
-
-      event.custom({
-        "type": "actuallyadditions:empowering",
-        "base": {
-          "item": "kubejs:advanced_casing"
-        },
-        "color": 6522834,
-        "energy": 5000,
-        "modifiers": [
-          {
-            "tag": 'poly:combine_chips'
-          },
-          {
-            "tag": 'poly:tech_chips'
-          },
-          {
-            "tag": 'poly:combine_chips'
-          },
-          {
-            "tag": 'poly:tech_chips'
-          }
-        ],
-        "result": {
-          "item": "kubejs:complex_casing"
-        },
-        "time": 50
-      })
-    }
+  }
 })

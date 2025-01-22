@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "overview"
 	group: ""
-	icon: "kubejs:basic_casing"
 	id: "33424EB754BEA9EA"
 	order_index: 1
 	quest_links: [ ]
@@ -12,7 +11,7 @@
 			id: "3132C22C828D762C"
 			tasks: [{
 				id: "5DA7A7CFFFA156C0"
-				item: "create:cogwheel"
+				item: { }
 				type: "item"
 			}]
 			x: -2.0d
@@ -21,8 +20,8 @@
 		{
 			id: "726DBA2BCE3BC1D0"
 			tasks: [{
-				id: "022DDB43754E10DA"
-				item: "railcraft:water_tank_siding"
+				id: "610C002DD72D8230"
+				item: { count: 1, id: "railcraft:fluid_fueled_firebox" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -31,8 +30,8 @@
 		{
 			id: "5EA28AF4ECC8D0B8"
 			tasks: [{
-				id: "02DC81A5D7E677ED"
-				item: "twilightforest:twilight_oak_log"
+				id: "4A666B292304FF6F"
+				item: { count: 1, id: "deeperdarker:blooming_sculk_stone" }
 				type: "item"
 			}]
 			x: 16.0d
@@ -41,18 +40,18 @@
 		{
 			id: "530218D1D5E25133"
 			tasks: [{
-				id: "2DA7C08DE1C6C555"
-				item: "enderio:alloy_smelter"
+				id: "2D6CFF04262D5B7E"
+				item: { count: 1, id: "enderio:sag_mill" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
 			id: "03BD0F8C48965711"
 			tasks: [{
-				id: "6236B1FCB6CAF1AF"
-				item: "industrialforegoing:fluid_extractor"
+				id: "2C2D7F534A88D5D8"
+				item: { count: 1, id: "industrialforegoing:latex_processing_unit" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -61,12 +60,8 @@
 		{
 			id: "21255A5186967FEF"
 			tasks: [{
-				id: "4CBB230936FAC6C9"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_1_rocket"
-					tag: { }
-				}
+				id: "51568844AA948914"
+				item: { count: 1, id: "stellaris:rocket" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -75,18 +70,18 @@
 		{
 			id: "364A89697B6E4259"
 			tasks: [{
-				id: "5E0F69600133B44E"
-				item: "mekanism:metallurgic_infuser"
+				id: "57524DA0DD387E03"
+				item: { count: 1, id: "nautec:augmentation_station" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
 			id: "77422EABB50A0901"
 			tasks: [{
-				id: "217FE4E8E14B92A0"
-				item: "actuallyadditions:atomic_reconstructor"
+				id: "0D56F5916BCEED09"
+				item: { count: 1, id: "actuallyadditions:atomic_reconstructor" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -95,18 +90,18 @@
 		{
 			id: "505494A9F5740E0D"
 			tasks: [{
-				id: "270BEB8DF963375F"
-				item: "powah:thermo_generator_starter"
+				id: "0FA824E28C792FC3"
+				item: { count: 1, id: "powah:energy_cell_basic" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
 			id: "2EFE7BC162C12CB9"
 			tasks: [{
-				id: "7FDD40A86F4855CD"
-				item: "botania:mana_pool"
+				id: "5C04E66CE0A9C4E8"
+				item: { count: 1, id: "ars_nouveau:novice_spell_book" }
 				type: "item"
 			}]
 			x: 14.0d
@@ -115,18 +110,18 @@
 		{
 			id: "6BDB18881BDA0DA5"
 			tasks: [{
-				id: "7B81F2AE00AFFFF0"
-				item: "hostilenetworks:blank_data_model"
+				id: "01943500ED165DA1"
+				item: { count: 1, id: "hostilenetworks:sim_chamber" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			id: "6D130ED5BD7A5D94"
 			tasks: [{
-				id: "4FB5515D2DFCD8D3"
-				item: "toms_storage:ts.storage_terminal"
+				id: "1260B08C93683BB8"
+				item: { count: 1, id: "toms_storage:storage_terminal" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -135,8 +130,8 @@
 		{
 			id: "636810E644CC895B"
 			tasks: [{
-				id: "6FC0594175420FE0"
-				item: "ae2:crafting_terminal"
+				id: "0AA6C7E1C1043C8C"
+				item: { count: 1, id: "ae2:drive" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -145,8 +140,8 @@
 		{
 			id: "17F168A01D533403"
 			tasks: [{
-				id: "132675A16E99B960"
-				item: "mekanismgenerators:fusion_reactor_controller"
+				id: "245F4FD7D53F1CC8"
+				item: { count: 1, id: "mekanismgenerators:fission_fuel_assembly" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -156,7 +151,7 @@
 			id: "53AE243DD9361D43"
 			tasks: [{
 				id: "771CD6D9CF835417"
-				item: "tfmg:pumpjack_crank"
+				item: { }
 				type: "item"
 			}]
 			x: -2.0d
@@ -166,8 +161,8 @@
 			id: "56738E386CDE51BB"
 			size: 1.25d
 			tasks: [{
-				id: "5B58F4BD8759D2EA"
-				item: "draconicevolution:draconium_core"
+				id: "1EFD9180C9D26DF1"
+				item: { count: 1, id: "replication:replicator" }
 				type: "item"
 			}]
 			x: -1.0d
@@ -177,18 +172,18 @@
 			id: "666926FD2DAB92D2"
 			tasks: [
 				{
-					id: "6103701360E6C9C5"
-					item: "laserio:laser_node"
+					id: "59803238369A7D85"
+					item: { count: 1, id: "pipez:item_pipe" }
 					type: "item"
 				}
 				{
-					id: "7E846C3A1831492C"
-					item: "modularrouters:modular_router"
+					id: "4CB6440C06AE84FC"
+					item: { count: 1, id: "modularrouters:modular_router" }
 					type: "item"
 				}
 				{
-					id: "47E36F0D6558CD24"
-					item: "pipez:item_pipe"
+					id: "43A632760D2F3E12"
+					item: { count: 1, id: "laserio:laser_node" }
 					type: "item"
 				}
 			]
@@ -198,8 +193,8 @@
 		{
 			id: "0652664879F9BACB"
 			tasks: [{
-				id: "0275AF9EA19F852B"
-				item: "ftbquests:barrier"
+				id: "6FA7F78B09B40CC5"
+				item: { count: 1, id: "pneumaticcraft:fluid_mixer" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -208,28 +203,18 @@
 		{
 			id: "6EC638E44173A558"
 			tasks: [{
-				id: "248D060A3BA88163"
-				item: "ars_nouveau:novice_spell_book"
+				id: "597956346E68A422"
+				item: { count: 1, id: "occultism:dictionary_of_spirits" }
 				type: "item"
 			}]
 			x: 14.0d
 			y: 0.0d
 		}
 		{
-			id: "7D1FFC0D83269D34"
-			tasks: [{
-				id: "34BC7BFE36C14112"
-				item: "thermal:machine_smelter"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 0.0d
-		}
-		{
 			id: "0BFB36D9EB9F62AA"
 			tasks: [{
-				id: "5D83E7A442F3DC5D"
-				item: "industrialforegoing:dissolution_chamber"
+				id: "5CE4FE5003BED462"
+				item: { count: 1, id: "mekanism:advanced_enriching_factory" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -238,8 +223,8 @@
 		{
 			id: "59F0960C1C9BC9FC"
 			tasks: [{
-				id: "05AF05947BAF1668"
-				item: "thermalendergy:endergy_upgrade_3"
+				id: "7AD8CA10DF5C7CB9"
+				item: { count: 1, id: "oritech:accelerator_controller" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -248,18 +233,18 @@
 		{
 			id: "7B539847C09398AC"
 			tasks: [{
-				id: "040B60DC6B7042C4"
-				item: "mekanism:advanced_enriching_factory"
+				id: "39CE0A71E1A43453"
+				item: { count: 1, id: "productivebees:honey_generator" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			id: "0A0ACCCEC854F8FB"
 			tasks: [{
 				id: "050D598D713F123B"
-				item: "rftoolsdim:dimension_editor"
+				item: { }
 				type: "item"
 			}]
 			x: 4.0d
@@ -269,7 +254,7 @@
 			id: "266BBE444C86564A"
 			tasks: [{
 				id: "181A76CA2F9F18A8"
-				item: "fluxnetworks:flux_plug"
+				item: { }
 				type: "item"
 			}]
 			x: -2.0d
@@ -278,8 +263,8 @@
 		{
 			id: "14341037B4FC9BB5"
 			tasks: [{
-				id: "0299E3EA9BA5D944"
-				item: "computercraft:computer_normal"
+				id: "67559AA509DF116A"
+				item: { count: 1, id: "industrialforegoing:dissolution_chamber" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -287,19 +272,26 @@
 		}
 		{
 			id: "659193CDE87489E9"
-			tasks: [{
-				id: "543D04FC75034781"
-				item: "integratedscripting:part_terminal_scripting"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1F8AAAD53D3F5553"
+					item: { count: 1, id: "integratedscripting:part_terminal_scripting" }
+					type: "item"
+				}
+				{
+					id: "70E1F3EACD52C51D"
+					item: { count: 1, id: "computercraft:computer_normal" }
+					type: "item"
+				}
+			]
 			x: 8.0d
 			y: 2.0d
 		}
 		{
 			id: "7408ED5123DAC86F"
 			tasks: [{
-				id: "6543DAF59612A814"
-				item: "ftbquests:barrier"
+				id: "4F967F221B7B6B27"
+				item: { count: 1, id: "modular_machinery_reborn:energyinputhatch_huge" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -308,8 +300,8 @@
 		{
 			id: "6F6F2BAC97479577"
 			tasks: [{
-				id: "234476C2FC361596"
-				item: "expatternprovider:ex_drive"
+				id: "566FD4359C4A1BBE"
+				item: { count: 1, id: "extendedae:ex_interface" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -318,8 +310,8 @@
 		{
 			id: "4751560B0F348FB3"
 			tasks: [{
-				id: "4F4787A42F06EF23"
-				item: "aether:aether_grass_block"
+				id: "5EB743C2B44EBA8C"
+				item: { count: 1, id: "deep_aether:golden_heights_grass_block" }
 				type: "item"
 			}]
 			x: 16.0d
@@ -329,8 +321,8 @@
 			id: "03050A4D8CEED2FE"
 			size: 1.25d
 			tasks: [{
-				id: "3BD5F8FE41B64F06"
-				item: "extendedcrafting:epic_auto_table"
+				id: "28206DAAD1749219"
+				item: { count: 1, id: "extendedcrafting:ultimate_table" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -340,73 +332,62 @@
 			id: "4464D3463D4DD612"
 			size: 1.5d
 			tasks: [{
-				id: "3C4B7E2DDBD2B91F"
-				item: "extendedcrafting:the_ultimate_ingot"
+				id: "4A1407FB250B616C"
+				item: { count: 1, id: "extendedcrafting:the_ultimate_ingot" }
 				type: "item"
 			}]
 			x: 2.0d
 			y: 8.5d
 		}
 		{
-			id: "318A71201D5A0998"
-			tasks: [{
-				id: "133D81BE1F6A68BA"
-				item: "forestry:bee_house"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			id: "048D7FFDFDE848BC"
-			tasks: [{
-				id: "56F99763A453022C"
-				item: "kubejs:basic_casing"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 0.0d
-		}
-		{
-			id: "1647C535ACB101E6"
-			tasks: [{
-				id: "755BB33EAC40043B"
-				item: "kubejs:advanced_casing"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.0d
-		}
-		{
-			id: "558FFAEC3F476D25"
-			tasks: [{
-				id: "5D3CBB1540317690"
-				item: "kubejs:complex_casing"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 4.0d
-		}
-		{
-			id: "66D44C7015407EF2"
-			tasks: [{
-				id: "5529FA5CEE5B37A8"
-				item: "kubejs:extreme_casing"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 6.0d
-		}
-		{
 			id: "7CCEED7CE12EA9E4"
 			tasks: [{
 				id: "4DEE07589D57BD3A"
-				item: "minecraft:grass_block"
+				item: { }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: -2.0d
 		}
+		{
+			id: "11CF04B8243CAE04"
+			tasks: [{
+				id: "4338A2DBDED2765E"
+				item: { count: 1, id: "oritech:machine_core_1" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			id: "747D8A839BF8BBBA"
+			tasks: [{
+				id: "363E8C4DE1C1AA68"
+				item: { count: 1, id: "energizedpower:basic_machine_frame" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "7C047A332527187D"
+			tasks: [{
+				id: "478E1C7317A9E950"
+				item: { count: 1, id: "mekanism:metallurgic_infuser" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			id: "1F8048A1DA9B67DA"
+			tasks: [{
+				id: "2840E4FD2A04D32E"
+				item: { count: 1, id: "justdirethings:raw_ferricore_ore" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
 	]
-	title: "Overview"
 }

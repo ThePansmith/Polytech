@@ -7,21 +7,13 @@ StartupEvents.registry("block", event => {
         return;
     }
 
-    // Machine Casings
-    const casings = [
-        'basic',
-        'advanced',
-        'complex',
-        'extreme',
-        'insane'
-    ]
-
-    casings.forEach(casing => {
-        event.create(`${casing}_casing`)
-            .soundType('metal')
-            .resistance(6).hardness(5)
-            .tagBlock("mineable/pickaxe")
-            .tagBlock("forge:mineable/wrench")
-            .requiresTool(true);
-    });
+    event.create('predictive_casing')
+        .displayName("Predictive Casing")
+        .soundType('metal')
+        .resistance(4)
+        .hardness(4)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
+        .defaultCutout();
 });

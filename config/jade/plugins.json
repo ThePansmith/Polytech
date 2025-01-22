@@ -1,23 +1,19 @@
 {
-  "replication": {
-    "matter_tank": true
-  },
-  "enderchests": {
-    "hud": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
+    "energy_storage.style": "PROGRESS_BAR",
     "item_storage": true,
     "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
+    "next_entity_drop": true,
     "energy_storage": true,
-    "entity_armor.max_for_render": 40,
+    "entity_armor.max_for_render": 20,
     "breaking_progress": true,
     "tnt_stability": true,
     "item_storage.items_per_line": 9,
@@ -32,15 +28,14 @@
     "mob_spawner": true,
     "redstone": true,
     "fluid_storage": true,
-    "chicken_egg": true,
     "jukebox": true,
     "brewing_stand": true,
     "energy_storage.detailed": false,
     "note_block": true,
+    "fluid_storage.style": "PROGRESS_BAR",
     "beehive": true,
     "item_storage.detailed_amount": 54,
     "player_head": true,
-    "block_states": false,
     "lectern": true,
     "entity_armor": true,
     "harvest_tool.creative": false,
@@ -57,43 +52,20 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "railcraft": {
-    "signals": true,
-    "track_component": true,
-    "locomotive": true,
-    "switch_track": true
-  },
-  "endertanks": {
-    "hud.basic": true,
-    "hud": true,
-    "hud.status": true,
-    "hud.contents": true
-  },
   "jade": {
     "coordinates.rel": false,
+    "registry_name.special": false,
+    "block_states": false,
     "distance": false,
     "block_face": false,
     "coordinates": false,
     "registry_name": "OFF",
+    "block_properties": false,
     "mod_name": true
   },
-  "expatternprovider": {
+  "extendedae": {
     "jade_chamber": true,
     "jade_wireless": true
-  },
-  "mcjtylib": {
-    "jadeaddons": true
-  },
-  "lootr": {
-    "info": true
-  },
-  "integrateddynamicscompat": {
-    "proxy": true,
-    "mechanical_squeezer": true,
-    "mechanical_drying_basin": true,
-    "drying_basin": true,
-    "part": true,
-    "squeezer": true
   },
   "ae2": {
     "part_icon": true,
@@ -107,9 +79,6 @@
     "crafting_monitor": true,
     "part_name": true
   },
-  "modularrouters": {
-    "router": true
-  },
   "extendedcrafting": {
     "elite_auto_table": true,
     "ender_crafter": true,
@@ -119,34 +88,18 @@
     "auto_ender_crafter": true,
     "ultimate_table": true,
     "ultimate_auto_table": true,
-    "epic_table": true,
     "elite_table": true,
     "basic_table": true,
-    "epic_auto_table": true,
     "crafting_core": true,
     "advanced_auto_table": true,
     "compressor": true
   },
-  "ars_nouveau": {
-    "mob_jar": true
-  },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
   "mekanism": {
-    "infuse_type": true,
-    "gas": true,
+    "chemical": true,
     "remove_builtin": true,
-    "pigment": true,
     "fluid": true,
-    "slurry": true,
     "energy": true,
     "tooltip_renderer": true
-  },
-  "shetiphiancore": {
-    "hud.rgb16": true,
-    "hud": true,
-    "hud.redstone": true
   },
   "easy_villagers": {
     "villager": true,
@@ -156,27 +109,90 @@
   "pipez": {
     "pipe": true
   },
-  "twilightforest": {
-    "quest_ram_wool": true
+  "waystones": {
+    "waystone": true
+  },
+  "replication": {
+    "matter_tank": true
+  },
+  "enderchests": {
+    "hud": true
+  },
+  "railcraft": {
+    "signals": true,
+    "track_component": true,
+    "locomotive": true,
+    "switch_track": true
+  },
+  "jade_access": {
+    "held_item": true,
+    "sign": true,
+    "block": true,
+    "entity": true,
+    "entity_variant": true
+  },
+  "oritech": {
+    "machine_core_controller": true
+  },
+  "pneumaticcraft": {
+    "pneumatic": true,
+    "tube_module": true,
+    "entity": true,
+    "redstone": true,
+    "camo": true,
+    "semiblock": true
+  },
+  "modern_industrialization": {
+    "overclock": true,
+    "pipe": true
+  },
+  "functionalstorage": {
+    "drawer": true
+  },
+  "integrateddynamicscompat": {
+    "proxy": true,
+    "mechanical_squeezer": true,
+    "mechanical_drying_basin": true,
+    "drying_basin": true,
+    "part": true,
+    "squeezer": true
+  },
+  "productivebees": {
+    "bee": true,
+    "solitary_nest": true,
+    "canvas_beehive": true,
+    "bee_attributes": true
+  },
+  "modularrouters": {
+    "router": true
+  },
+  "ars_nouveau": {
+    "mob_jar": true
+  },
+  "nautec": {
+    "aquatic_catalyst": true,
+    "laser_junction": true,
+    "mixer": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "shetiphiancore": {
+    "hud.rgb16": true,
+    "hud": true,
+    "hud.redstone": true
+  },
+  "toms_storage": {
+    "inventory_config": true,
+    "inventory_connector": true
   },
   "supplementaries": {
     "hat_stand": true
   },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
+  "corpse": {
+    "corpse": true
   },
-  "waystones": {
-    "waystone": true
-  },
-  "gravestone": {
-    "grave": true
+  "modular_machinery_reborn": {
+    "machine_component_provider": true
   }
 }

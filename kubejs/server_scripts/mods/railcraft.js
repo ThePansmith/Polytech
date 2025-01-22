@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
-    const wiremat = [ 'copper', 'iron', 'gold', 'electrum']
+    const wiremat = [ 'copper', 'tin', 'gold']
     wiremat.forEach(wiremat => {
         event.custom({
         "type": "railcraft:rolling",
         "key": {
           "a": {
-            "item": `thermal:${wiremat}_plate`
+            "item": `alltheores:${wiremat}_plate`
           }
         },
         "pattern": [
@@ -14,8 +14,8 @@ ServerEvents.recipes(event => {
           "   ",
         ],
         "result": {
-          "count": 4,
-          "item": `createaddition:${wiremat}_wire`
+          "count": 6,
+          "id": `energizedpower:${wiremat}_wire`
         }
       })
     })

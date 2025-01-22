@@ -1,13 +1,4 @@
 {
-	// World generation config options.
-	"worldgen": {
-		// Enable this to disable worldgen entirely. If true, the other options have no effect.
-		"disable_all": false,
-		"poor_uraninite_veins_per_chunk": 8,
-		"uraninite_veins_per_chunk": 6,
-		"dense_uraninite_veins_per_chunk": 3,
-		"dry_ice_veins_per_chunk": 9
-	},
 	// Other general config options.
 	"general": {
 		// Enable this to get Player Aerial Pearl by right clicking a Zombie or Husk with a Aerial Pearl.
@@ -16,20 +7,6 @@
 		"dimensional_binding_card": true,
 		// Enable this to get Lens Of Ender by right clicking an Enderman or Endermite with a Photoelectric Pane.
 		"lens_of_ender": true,
-		// List of fluids used in the Magmator.
-		"magmatic_fluids": {
-			"minecraft:lava": 10000
-		},
-		// List of coolant fluids used in the Reactor and the Thermo Generator.
-		"coolant_fluids": {
-			"minecraft:water": 1
-		},
-		// List of heat source blocks used under Thermo Generator.
-		"heat_blocks": {
-			"minecraft:lava": 1000,
-			"minecraft:magma_block": 800,
-			"powah:blazing_crystal_block": 2800
-		},
 		// Energy produced per fuel tick in the Furnator.
 		"energy_per_fuel_tick": 30,
 		"energizing_range": 4,

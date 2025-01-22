@@ -1,9 +1,3 @@
 {
-	chapter_groups: [
-		{ id: "49D0F8C7FC43199E", title: "Tier 1 " }
-		{ id: "636AB5ED097E3478", title: "Tier 2" }
-		{ id: "1BB2D6D4C5662EFF", title: "Tier 3" }
-		{ id: "069AE4E8F3A467F9", title: "Tier 4" }
-		{ id: "77F819DD7E7EBFCA", title: "Tier 5" }
-	]
+	chapter_groups: [ ]
 }

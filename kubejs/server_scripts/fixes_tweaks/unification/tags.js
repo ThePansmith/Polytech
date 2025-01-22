@@ -29,18 +29,18 @@ const unifyChisel = (event) => {
 }
 
 ServerEvents.tags('item', event => {
-    event.add('poly:rubbers', ['thermal:cured_rubber', 'industrialforegoing:plastic'])
-    event.add('poly:basic_caps', ['enderio:basic_capacitor', 'powah:capacitor_basic_large'])
-    event.add('poly:combine_chips', ['kubejs:empowered_chip', 'kubejs:industrial_chip'])
-    event.add('poly:tech_chips', ['kubejs:advanced_chip', 'kubejs:prediction_chip'])
-    event.add("poly:empowered_gem", /actuallyadditions:empowered_.+_crystal$/)
+    event.add('poly:plastics', ['oritech:plastic_sheet', 'industrialforegoing:plastic', 'pneumaticcraft:plastic', 'mekanism:hdpe_sheet'])
+    event.add('poly:basic_caps', ['enderio:basic_capacitor', 'powah:capacitor_basic_large', 'tfmg:capacitor_'])
+    event.add('poly:advanced_caps', ['enderio:double_layer_capacitor', 'powah:capacitor_blazing'])
     event.add("poly:cards", ['integrateddynamics:variable', 'computercraft:disk'])
+    event.add("poly:energized_metal", ['powah:steel_energized', 'tfmg:magnetic_ingot'])
+    event.add("poly:aa_casing_prereq", ['rftoolsbase:machine_frame', 'industrialforegoing:machine_frame_simple'])
+    event.add("poly:basic_circuit", ['mekanism:basic_control_circuit', 'energizedpower:basic_circuit', 'forestry:circuit_board_basic'])
+    event.add("poly:advanced_circuit", ['mekanism:advanced_control_circuit', 'energizedpower:advanced_circuit', 'forestry:circuit_board_enhanced'])
 
 
     event.add('forge:heads', 'enderio:enderman_head')
     event.add('forge:coal_coke', 'tfmg:coal_coke')
-
-    // Sawdust
     event.add("forge:sawdust", "#forge:dusts/wood")
 
 })
@@ -55,24 +55,24 @@ ServerEvents.tags('fluid', event => {
     unifyChisel(event);
 })
 
-// Unification regexes are definited in startup script _initial.js
-ServerEvents.tags('item', event => {
-    event.removeAllTagsFrom(global.unificationPattern)
-    event.removeAllTagsFrom(global.manualUnification)
-    event.removeAllTagsFrom(global.nuclearcraftFuelPattern)
-    event.removeAllTagsFrom(global.nuclearcraftMaterialPattern)
-})
+// // Unification regexes are definited in startup script _initial.js
+// ServerEvents.tags('item', event => {
+//     event.removeAllTagsFrom(global.unificationPattern)
+//     event.removeAllTagsFrom(global.manualUnification)
+//     event.removeAllTagsFrom(global.nuclearcraftFuelPattern)
+//     event.removeAllTagsFrom(global.nuclearcraftMaterialPattern)
+// })
 
-ServerEvents.recipes(event => {
-    event.remove({ output: global.unificationPattern })
-    event.remove({ output: global.manualUnification })
-    event.remove({ output: global.nuclearcraftFuelPattern })
-    event.remove({ output: global.nuclearcraftMaterialPattern })
+// ServerEvents.recipes(event => {
+//     event.remove({ output: global.unificationPattern })
+//     event.remove({ output: global.manualUnification })
+//     event.remove({ output: global.nuclearcraftFuelPattern })
+//     event.remove({ output: global.nuclearcraftMaterialPattern })
 
-    // Tags cannot be removed from items in HammerLib (see https://github.com/dragon-forge/HammerLib/issues/71).
-    // Thus, we replace the input of any recipe that uses one of the tags of those items with the corresponding GT item.
-    let hammerLibGears = ["iron", "diamond"]
-    hammerLibGears.forEach(material => {
-        event.replaceInput({ input: `#forge:gears/${material}` }, `#forge:gears/${material}`, `gtceu:${material}_gear`)
-    })
-})
+//     // Tags cannot be removed from items in HammerLib (see https://github.com/dragon-forge/HammerLib/issues/71).
+//     // Thus, we replace the input of any recipe that uses one of the tags of those items with the corresponding GT item.
+//     let hammerLibGears = ["iron", "diamond"]
+//     hammerLibGears.forEach(material => {
+//         event.replaceInput({ input: `#forge:gears/${material}` }, `#forge:gears/${material}`, `gtceu:${material}_gear`)
+    // })
+// })

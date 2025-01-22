@@ -3,9 +3,8 @@
 	default_quest_shape: ""
 	filename: "getting_started"
 	group: ""
-	id: "65F1386EC7FF21E5"
+	id: "770BFD7C5F78D703"
 	order_index: 0
 	quest_links: [ ]
 	quests: [ ]
-	title: "Getting Started"
 }

@@ -9,7 +9,6 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
-	icon: "supplementaries:soap"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
@@ -18,6 +17,6 @@
 	}
 	pause_game: false
 	progression_mode: "flexible"
-	title: "idk"
+	show_lock_icons: false
 	version: 13
 }
