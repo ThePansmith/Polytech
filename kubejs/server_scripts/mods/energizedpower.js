@@ -5,10 +5,10 @@ ServerEvents.recipes(event => {
             'FCF',
             'PPP'
           ], {
-            S: 'minecraft:bricks',
+            P: 'minecraft:bricks',
             C: 'industrialforegoing:machine_frame_pity',
             F: 'minecraft:blast_furnace',
-            P: '#c:plates/steel'
-          }).id('industrialforegoing:machine_frame_pity')
+            S: '#c:plates/steel'
+          }).id('energizedpower:crafting/alloy_furnace')
         }
     })
