@@ -11,4 +11,16 @@ ServerEvents.recipes(event => {
             S: '#c:plates/steel'
           }).id('energizedpower:crafting/alloy_furnace')
         }
+        event.shaped('enderio:primitive_alloy_smelter', [
+            'SSS',
+            'FCF',
+            'PPP'
+          ], {
+            P: 'minecraft:deepslate',
+            C: 'industrialforegoing:machine_frame_pity',
+            F: 'minecraft:blast_furnace',
+            S: '#c:plates/steel'
+          }).id('enderio:primitive_alloy_smelter')
+        
+        
     })
