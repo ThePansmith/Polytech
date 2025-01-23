@@ -3,7 +3,11 @@
     "minecraft",
     "kubejs",
     "mekanism",
-    "modern_industrialization"
+    "modern_industrialization",
+    "alltheores",
+    "railcraft",
+    "oritech",
+    "silentgear"
   ],
   "priority_overrides": {},
   "stone_variants": [

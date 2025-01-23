@@ -68,13 +68,24 @@ ServerEvents.recipes(event => {
       B: '#c:plates/steel'
     }).id("rftoolsbase:machine_frame")
 
+    event.remove({ id: 'productivebees:bee_cage_block' }) //have an alt magic recipe thats cheaper
+    event.shaped('8x productivebees:bee_cage', [
+      'LSL',
+      'LHL',
+      'LSL'
+    ], {
+      L: '#minecraft:logs',
+      S: '#c:ingots/ferricore',
+      H: 'minecraft:honey_block' 
+    }).id("productivebees:bee_cage") 
+
     event.shaped('actuallyadditions:iron_casing', [
       'DGD',
       'CSC',
       'DGD'
     ], {
-      D: 'enderio:dark_steel_ingot',
-      G: '#c:plates/electrum',
+      G: 'enderio:dark_steel_ingot',
+      D: 'railcraft:white_iron_tank_wall',
       C: '#poly:basic_caps',
       S: '#poly:aa_casing_prereq'
     }).id("actuallyadditions:iron_casing")

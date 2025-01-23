@@ -74,5 +74,5 @@ ServerEvents.tags('fluid', event => {
 //     let hammerLibGears = ["iron", "diamond"]
 //     hammerLibGears.forEach(material => {
 //         event.replaceInput({ input: `#forge:gears/${material}` }, `#forge:gears/${material}`, `gtceu:${material}_gear`)
-    // })
+//     })
 // })

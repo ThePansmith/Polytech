@@ -25,7 +25,7 @@ if (isExpertMode) {
     ], {
         V: 'ae2:quartz_vibrant_glass',
         F: 'industrialforegoing:machine_frame_simple',
-        S: '#c:plates/netherite',
+        S: '#c:plates/steel',
         C: 'ae2:fluix_crystal'
     }).id('ae2:network/blocks/energy_energy_acceptor')
 }

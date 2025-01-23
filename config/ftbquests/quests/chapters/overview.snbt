@@ -193,8 +193,8 @@
 		{
 			id: "0652664879F9BACB"
 			tasks: [{
-				id: "6FA7F78B09B40CC5"
-				item: { count: 1, id: "pneumaticcraft:fluid_mixer" }
+				id: "2066B3D3567F10E0"
+				item: { count: 1, id: "pneumaticcraft:thermal_compressor" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -243,22 +243,12 @@
 		{
 			id: "0A0ACCCEC854F8FB"
 			tasks: [{
-				id: "050D598D713F123B"
-				item: { }
+				id: "612A5C13A08ACB28"
+				item: { count: 1, id: "industrialforegoingsouls:soul_laser_base" }
 				type: "item"
 			}]
 			x: 4.0d
 			y: 6.0d
-		}
-		{
-			id: "266BBE444C86564A"
-			tasks: [{
-				id: "181A76CA2F9F18A8"
-				item: { }
-				type: "item"
-			}]
-			x: -2.0d
-			y: 4.0d
 		}
 		{
 			id: "14341037B4FC9BB5"
@@ -370,16 +360,6 @@
 			y: 0.0d
 		}
 		{
-			id: "7C047A332527187D"
-			tasks: [{
-				id: "478E1C7317A9E950"
-				item: { count: 1, id: "mekanism:metallurgic_infuser" }
-				type: "item"
-			}]
-			x: -4.0d
-			y: 2.0d
-		}
-		{
 			id: "1F8048A1DA9B67DA"
 			tasks: [{
 				id: "2840E4FD2A04D32E"
@@ -388,6 +368,16 @@
 			}]
 			x: 4.0d
 			y: 0.0d
+		}
+		{
+			id: "4218A4460E4B64F9"
+			tasks: [{
+				id: "7494D6041C27D860"
+				item: { count: 1, id: "rftoolsbase:machine_frame" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
 		}
 	]
 }
