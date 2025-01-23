@@ -120,7 +120,6 @@ ServerEvents.recipes(event => {
     ], {
       Z: '#c:plates/zinc',
       C: '#poly:basic_circuit',
-      G: 'enderio:dark_steel_block',
       P: '#poly:plastics'
     }).id('hostilenetworks:framework')
 
@@ -131,9 +130,8 @@ ServerEvents.recipes(event => {
     ], {
       Z: '#c:plates/zinc',
       C: 'oritech:super_ai_chip',
-      G: 'enderio:dark_steel_block',
       P: '#poly:plastics'
-    }).id('hostilenetworks:framework_alt')
+    }).id('kubejs:framework_alt')
 
     event.shaped('2x enderio:void_chassis', [
       'IEI',
@@ -157,5 +155,16 @@ ServerEvents.recipes(event => {
       A: 'industrialforegoing:machine_frame_simple'
     }).id('mekanism:metallurgic_infuser')
 
+    event.shaped('2x mekanism:steel_casing', [
+      'IEI',
+      'CRD',
+      'IEI'
+    ], {
+      I: 'justdirethings:eclipsealloy_ingot',
+      R: 'mekanism:block_osmium',
+      E: '#poly:advanced_circuit',
+      C: 'enderio:void_chassis',
+      D:'industrialforegoing:machine_frame_advanced'
+    }).id('mekanism:steel_casing')
   }
 })
