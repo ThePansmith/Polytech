@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
       'WSW'
     ], {
       S: '#c:plates/steel',
-      C: 'minecraft:redstone_block',
+      C: 'minecraft:copper_grate',
       W: '#minecraft:logs'
     }).id('industrialforegoing:machine_frame_pity')
 
