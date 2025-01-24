@@ -7,7 +7,7 @@
 			monster: 0
 			passive: 0
 		}
-		string_id: "loottest"
+		string_id: "lootbox"
 	}
 	loot_size: 1
 	order_index: 0
@@ -105,7 +105,7 @@
 			}
 		}
 		{ id: "6726A8109DA78F7C", item: { count: 1, id: "silentgear:slingshot_blueprint" } }
-		{ id: "1AB88FF589E5E655", item: { components: { "minecraft:damage": 0, "silentgear:construction": { broken_count: 0, example: 0b, parts: [ { item: { components: { "silentgear:material_list": [{ item: { count: 1, id: "silentgear:blaze_gold_ingot" }, material: "silentgear:blaze_gold" }] }, count: 1, id: "silentgear:ring_shank" }, part: "silentgear:ring_shank" }, { item: { components: { "silentgear:material_list": [{ item: { count: 1, id: "minecraft:diamond" }, material: "silentgear:diamond" }] }, count: 1, id: "silentgear:setting" }, part: "silentgear:setting" } ], repairedCount: 0 }, "silentgear:model_index": 3, "silentgear:model_key": "ring:ring_shank{blaze_gold},setting{diamond},", "silentgear:properties": { "silentgear:armor": 13.0f, "silentgear:armor_durability": 9.0f, "silentgear:armor_toughness": 1.0f, "silentgear:attack_damage": 2.0f, "silentgear:attack_reach": 6.0f, "silentgear:attack_speed": 0.1f, "silentgear:block_reach": 0.0f, "silentgear:charging_value": 1.2f, "silentgear:draw_speed": 0.2f, "silentgear:durability": 69.0f, "silentgear:enchantment_value": 24.0f, "silentgear:harvest_speed": 15.0f, "silentgear:harvest_tier": { incorrect_blocks_for_tool: "silentgear:incorrect_for_blaze_gold_tools", level_hint: "2", name: "blaze_gold" }, "silentgear:knockback_resistance": 0.0f, "silentgear:magic_armor": 10.0f, "silentgear:magic_damage": 5.0f, "silentgear:projectile_accuracy": 0.9f, "silentgear:projectile_speed": 1.2f, "silentgear:ranged_damage": 1.0f, "silentgear:rarity": 45.0f, "silentgear:repair_efficiency": 0.0f, "silentgear:repair_value": 0.0f, "silentgear:traits": [ { conditions: [ ], level: 1, trait: "silentgear:brilliant" }, { conditions: [ ], level: 3, trait: "silentgear:greedy" }, { conditions: [ ], level: 3, trait: "silentgear:malleable" }, { conditions: [ { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] } ], level: 1, trait: "silentgear:bastion" } ] } }, count: 1, id: "silentgear:ring" } }
+		{ id: "1AB88FF589E5E655", item: { components: { "minecraft:damage": 0, "silentgear:construction": { broken_count: 0, example: 0b, parts: [ { item: { components: { "silentgear:material_list": [{ item: { count: 1, id: "silentgear:blaze_gold_ingot" }, material: "silentgear:blaze_gold" }] }, count: 1, id: "silentgear:ring_shank" }, part: "silentgear:ring_shank" }, { item: { components: { "silentgear:material_list": [{ item: { count: 1, id: "minecraft:diamond" }, material: "silentgear:diamond" }] }, count: 1, id: "silentgear:setting" }, part: "silentgear:setting" } ], repairedCount: 0 }, "silentgear:model_index": 3, "silentgear:model_key": "ring:ring_shank{blaze_gold},setting{diamond},", "silentgear:properties": { "silentgear:armor": 13.0f, "silentgear:armor_durability": 9.0f, "silentgear:armor_toughness": 1.0f, "silentgear:attack_damage": 2.0f, "silentgear:attack_reach": 6.0f, "silentgear:attack_speed": 0.1f, "silentgear:block_reach": 0.0f, "silentgear:charging_value": 1.2f, "silentgear:draw_speed": 0.2f, "silentgear:durability": 69.0f, "silentgear:enchantment_value": 24.0f, "silentgear:harvest_speed": 15.0f, "silentgear:harvest_tier": { incorrect_blocks_for_tool: "silentgear:incorrect_for_blaze_gold_tools", level_hint: "2", name: "blaze_gold" }, "silentgear:knockback_resistance": 0.0f, "silentgear:magic_armor": 10.0f, "silentgear:magic_damage": 5.0f, "silentgear:projectile_accuracy": 0.9f, "silentgear:projectile_speed": 1.2f, "silentgear:ranged_damage": 1.0f, "silentgear:rarity": 45.0f, "silentgear:repair_efficiency": 0.0f, "silentgear:repair_value": 0.0f, "silentgear:traits": [ { conditions: [ ], level: 1, trait: "silentgear:brilliant" }, { conditions: [ ], level: 3, trait: "silentgear:greedy" }, { conditions: [ ], level: 3, trait: "silentgear:malleable" }, { conditions: [ { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] }, { type: "silentgear:or", values: [ { gear_type: "silentgear:armor", type: "silentgear:gear_type" }, { gear_type: "silentgear:curio", type: "silentgear:gear_type" } ] } ], level: 1, trait: "silentgear:bastion" } ] } }, count: 1, id: "silentgear:ring" } }
 		{
 			count: 2
 			id: "06DCF54A0A8720E8"
@@ -378,5 +378,27 @@
 		{ id: "5F3378F773F73C65", item: { count: 1, id: "ae2:network_tool" } }
 		{ id: "34E26D749D108259", item: { count: 1, id: "aether:skyroot_axolotl_bucket" } }
 		{ id: "7B65D5BDEFC3CF64", item: { components: { "oritech:energy": 10000L }, count: 1, id: "oritech:hand_drill" } }
+		{
+			count: 4
+			id: "5810166DDB50D5FA"
+			item: {
+				count: 1
+				id: "appflux:redstone_crystal"
+			}
+		}
+		{ id: "6F24EB0FF21761D9", item: { count: 1, id: "advancedperipherals:chat_box" } }
+		{
+			count: 2
+			id: "5584CA6552F808BF"
+			item: {
+				components: {
+					"minecraft:potion_contents": {
+						potion: "ars_nouveau:blasting_potion_strong"
+					}
+				}
+				count: 1
+				id: "supplementaries:bamboo_spikes_tipped"
+			}
+		}
 	]
 }
