@@ -39,6 +39,7 @@ config/modernfix-mixins.properties
 config/immediatelyfast.json
 config/ftbbackups2.json
 config/spark/tmp
+config/ars_nouveau/search_index/*
 config/spark/activity.json
 config/roughlyenoughitems/hints.json
 config/voicechat/username-cache.json
@@ -113,3 +114,5 @@ config/darkmodeeverywhereshaders.json
 #Don't ignore the Create client config so we can remove the Main Menu config button
 #it gets in the way of the beautiful FancyMenu
 !/config/create-client.toml
+.probe
+
