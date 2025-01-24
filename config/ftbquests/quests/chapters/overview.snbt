@@ -193,8 +193,8 @@
 		{
 			id: "0652664879F9BACB"
 			tasks: [{
-				id: "2066B3D3567F10E0"
-				item: { count: 1, id: "pneumaticcraft:thermal_compressor" }
+				id: "6521C5AD2F7ED0CE"
+				item: { count: 1, id: "pneumaticcraft:flux_compressor" }
 				type: "item"
 			}]
 			x: 6.0d
