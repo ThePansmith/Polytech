@@ -19,3 +19,4 @@ placeholder = true
 	#Ensure you have enabled GTCEU's nativeEUToPlatformNative and euToPlatformRatio = 4.
 	#A game/server restart is required to reload this setting.
 	enableGTCEU = true
+

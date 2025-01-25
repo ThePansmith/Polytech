@@ -1,3 +1,6 @@
+
+[core]
+
 	[core.general]
 		#If mod compatibility loader should crash hard if errors occur in that process.
 		crashOnModCompatCrash = false
@@ -8,6 +11,9 @@
 		#If the version checker should be enabled.
 		versionChecker = true
 
+[machine]
+
 	[machine.general]
-		#The data component types that should be filtered away when checking equality.
-		ignoreDataComponentsForEqualityFilters = ["cyclopscore:energy_storage"]
+		#The NBT Paths that should be filtered away when checking equality.
+		ignoreNbtPathsForEqualityFilters = ["$.ForgeCaps[\"astralsorcery:cap_item_amulet_holder\"]", "$.binding", "$.energy"]
+

@@ -1,3 +1,4 @@
+
 #Everything else
 [other]
 	#If true, Solidified Experience will always spawn orbs, even for regular players.
@@ -6,15 +7,21 @@
 	doUpdateCheck = true
 	#If true, Actually Additions' Update Checker searches for updates for the Minecraft Version you currently play on.
 	versionSpecificUpdateChecker = true
+	#If true, Mobs will randomly drop solidified XP occasionally.
+	doXpDrops = true
 	#If true, Cats drop Hairy Balls Occasionally.
 	doCatDrops = true
 	#Should Bat wings drop from Bats?
 	doBatDrops = true
+	#Should seeds (coffee beans, rice, flax, canola) drop from breaking grss?
+	doSeedsDrops = true
+	#The 1/n drop chance, per tick, for a fur ball to be dropped.
+	#Range: > 1
+	furDropChance = 5000
 	#If true, worms will drop from tilling the soil.
 	tillingWorms = true
 	#The amount of ticks it takes for a worm to die. When at 0 ticks, it will not die.
-	# Default: 0
-	# Range: 0 ~ 10000000
+	#Range: 0 ~ 10000000
 	wormDeathTime = 0
 	#Show Advanced Item Info when holding Control on every Item.
 	advancedInfo = true
@@ -38,40 +45,31 @@
 	redstoneConfigurator = "minecraft:redstone_torch"
 	#define the item used to configure Direction in laser relays
 	relayConfigurator = "minecraft:compass"
-	#define the item used to configure the area in a farmer
-	farmerConfigurator = "minecraft:compass"
 
 #Machine Settings
 [machineSettings]
 	#The size of the farmer's farming area.  Default is 9x9, must be an odd number.
-	# Default: 9
-	# Range: > 1
+	#Range: > 1
 	farmerArea = 9
 	#The amount of power the atomic reconstructor can store.
-	# Default: 300000
-	# Range: > 300000
+	#Range: > 300000
 	reconstructorPower = 300000
 	#The amount of power the oil generator can transfer per tick.
-	# Default: 500
-	# Range: > 100
+	#Range: > 100
 	oilGeneratorTransfer = 500
 	#The energy use of the Atomic Reconstructor's Mining Lens.
-	# Default: 60000
-	# Range: > 1
+	#Range: > 1
 	minerLensEnergy = 60000
 	#If Energy Laser Relays should have energy loss.
 	laserRelayLoss = true
 	#The cooldown between two generation cycles of the Leaf Generator, in ticks
-	# Default: 5
-	# Range: > 1
+	#Range: > 1
 	leafGeneratorCooldown = 5
 	#The Leaf Generator's Energy Production in CF/Leaf
-	# Default: 300
-	# Range: > 1
+	#Range: > 1
 	leafGeneratorCPPerLeaf = 300
 	#The size of the Leaf Generator's harvesting area.  Default is 7x7x7, must be an odd number.
-	# Default: 7
-	# Range: > 1
+	#Range: > 1
 	leafGeneratorArea = 7
 	#By default, the Vertical Digger mines everything that is in the 'forge:ores' block/item tags. If there is one that it can't mine, but should be able to, put its REGISTRY NAME here. These are the actual registered Item Names, the ones you use, for example, when using the /give Command. This Config Option only applies if the miner is in Ores Only Mode.
 	"Vertical Digger Extra Whitelist" = []
@@ -81,15 +79,10 @@
 #Worldgen Settings
 [worldgenSettings]
 	#Should Black Quartz generate in the world?
-	generateQuartz = true
-	#Should Canola generate in the World?
-	generateCanola = true
-	#Should Flax generate in the world?
-	generateFlax = true
-	#Should Coffee generate in the world?
-	generateCoffee = true
+	blackQuartzGeneration = true
 
 #Item settings
 [itemsSettings]
 	#By default, the Drill can mine certain blocks. If there is one that it can't mine, but should be able to, put its REGISTRY NAME here. These are the actual registered Item Names, the ones you use, for example, when using the /give Command.
 	"Drill Extra Whitelist" = ["TConstruct:GravelOre"]
+

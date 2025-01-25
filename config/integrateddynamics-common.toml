@@ -1,3 +1,6 @@
+
+[core]
+
 	[core.general]
 		#The ingredient network observation frequency slowdown rate in ticks.
 		ingredientNetworkObserverFrequencyDecreaseFactor = 5
@@ -41,6 +44,8 @@
 		operatorRecursionLimit = 256
 		#If the version checker should be enabled.
 		versionChecker = true
+
+[general]
 
 	[general.general]
 		#The energy usage multiplier for networks.
@@ -100,6 +105,8 @@
 		#The base energy usage for the machine reader.
 		machineReaderBaseConsumption = 1
 
+[machine]
+
 	[machine.general]
 		#The maximum offset in blocks a part can target.
 		maxPartOffset = 32
@@ -154,9 +161,13 @@
 		#The energy capacity of a mechanical drying basin.
 		capacity = 100000
 
+[worldgeneration]
+
 	[worldgeneration.menril_log_filled]
 		#The 1/x chance at which Menril Wood will be filled with Menril Resin when generated, the higher this value, the lower the chance.
 		filledMenrilLogChance = 10
+
+[item]
 
 	[item.menril_berries]
 		#If the berries should give the night vision effect when eaten.
@@ -167,3 +178,4 @@
 		obtainOnSpawn = true
 		#If the info book can give item rewards for tutorial completion.
 		bookRewards = true
+

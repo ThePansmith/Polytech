@@ -1,8 +1,5 @@
 {
+  "preventSearchIgnoredItems": false,
   "ingredientDedupe": false,
-  "entitySectionCME": false,
-  "scoreboardDebug": false,
-  "debugItemStackModifications": false,
-  "version": 1,
-  "debugNativeImage": false
+  "resourceLocationDedupe": false
 }

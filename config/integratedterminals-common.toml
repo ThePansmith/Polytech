@@ -1,3 +1,6 @@
+
+[machine]
+
 	[machine.general]
 		#The number of items that should be selected when clicking on an item in the storage terminal.
 		guiStorageItemInitialQuantity = 64
@@ -13,6 +16,8 @@
 		guiStorageFluidIncrementalQuantity = 1000
 		#The number of items that should be selected when clicking on a fluid in the storage terminal.
 		guiStorageFluidInitialQuantity = 100000
+
+[general]
 
 	[general.general]
 		#If the crafting grid should always be shown centrally, and not be responsive based on screen size.
@@ -46,6 +51,8 @@
 		#The number of columns in the medium scale of the storage terminal.
 		guiStorageScaleMediumColumns = 10
 
+[core]
+
 	[core.general]
 		#The limit for the number of leaves in a tree-based crafting plan after which it won't be sent to the client anymore.
 		terminalStorageMaxTreePlanSize = 64
@@ -63,3 +70,4 @@
 		terminalStoragePacketMaxInstances = 512
 		#If the version checker should be enabled.
 		versionChecker = true
+

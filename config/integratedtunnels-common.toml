@@ -1,3 +1,6 @@
+
+[general]
+
 	[general.general]
 		#The base energy usage for the energy importer.
 		importerEnergyBaseConsumption = 1
@@ -54,6 +57,8 @@
 		#The base energy usage for the world item exporter when it does not have a variable.
 		exporterWorldItemBaseConsumptionDisabled = 1
 
+[core]
+
 	[core.general]
 		#The maximum network fluid transfer rate.
 		fluidRateLimit = 2147483647
@@ -71,3 +76,4 @@
 		ejectItemsOnInconsistentSimulationMovement = true
 		#If the version checker should be enabled.
 		versionChecker = true
+

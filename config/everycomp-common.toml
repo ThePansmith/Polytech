@@ -1,3 +1,4 @@
+
 [general]
 	#Puts all the added items into a new Every Compat tab instead of their own mod tabs. Be warned that if disabled it could cause some issue with some mods that have custom tabs
 	creative_tab = true
@@ -17,3 +18,4 @@
 		block_type_enabled = true
 		#Only show on advanced settings
 		show_on_advanced_tooltips = false
+

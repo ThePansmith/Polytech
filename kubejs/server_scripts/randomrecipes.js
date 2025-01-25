@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             P: 'minecraft:bricks',
             C: 'industrialforegoing:machine_frame_pity',
             F: 'minecraft:blast_furnace',
-            S: '#c:plates/steel'
+            S: '#forge:plates/steel'
           }).id('energizedpower:crafting/alloy_furnace')
         }
         event.shaped('enderio:primitive_alloy_smelter', [
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
             P: 'minecraft:deepslate',
             C: 'industrialforegoing:machine_frame_pity',
             F: 'minecraft:blast_furnace',
-            S: '#c:plates/steel'
+            S: '#forge:plates/steel'
           }).id('enderio:primitive_alloy_smelter')
         
         

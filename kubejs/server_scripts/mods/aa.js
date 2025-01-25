@@ -46,10 +46,10 @@ ServerEvents.recipes(event => {
 
  
     if (isExpertMode) {
-        event.remove({id: 'oritech:centrifuge/carbon'})
-        reconstruct("c:dusts/coal", "oritech:carbon_fibre_strands", 1500)
-        event.remove({id: 'oritech:centrifuge/carbon'})
-        event.remove({id: /pneumaticcraft:explosion_crafting/})
-        empower('pneumaticcraft:ingot_iron_compressed', 4, 'enderio:dark_steel_ingot', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 5000, 10, 3355443)
+        // event.remove({id: 'oritech:centrifuge/carbon'})
+        // reconstruct("forge:dusts/coal", "oritech:carbon_fibre_strands", 1500)
+        // reconstruct("forge:dusts/coal", "oritech:carbon_fibre_strands", 1500)
+        reconstruct("minecraft:iron_ingot", 'thermal:redstone_servo', 1500)
+        reconstruct("minecraft:gold_ingot", "thermal:rf_coil", 2500)   
     }
 })

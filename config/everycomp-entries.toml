@@ -1,14 +1,50 @@
+
 #Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
 [types]
+
+	[types.cake]
+
+		[types.cake.thermal]
+			chocolate_cake = true
+			potion_cake = true
+			spice_cake = true
+
+		[types.cake.tconstruct]
+			earth_cake = true
+			sky_cake = true
+			ichor_cake = true
+			ender_cake = true
+			blood_cake = true
+			magma_cake = true
+
+		[types.cake.createaddition]
+			chocolate_cake = true
+			honey_cake = true
+
+	[types.wood_type]
+
+		[types.wood_type.integrateddynamics]
+			menril = true
 
 		[types.wood_type.ars_nouveau]
 			archwood = true
 
-		[types.wood_type.silentgear]
-			netherwood = true
+		[types.wood_type.quark]
+			azalea = true
+			ancient = true
+			blossom = true
 
-		[types.wood_type.integrateddynamics]
-			menril = true
+		[types.wood_type.botania]
+			livingwood = true
+			dreamwood = true
+
+		[types.wood_type.thermal]
+			rubberwood = true
+
+		[types.wood_type.ad_astra]
+			aeronos = true
+			strophar = true
+			glacian = true
 
 		[types.wood_type.aether]
 			skyroot = true
@@ -20,8 +56,23 @@
 			conberry = true
 			sunroot = true
 
+		[types.wood_type.iceandfire]
+			dreadwood = true
+
 		[types.wood_type.deeperdarker]
 			echo = true
+
+		[types.wood_type.tconstruct]
+			greenheart = true
+			skyroot = true
+			bloodshroom = true
+			enderbark = true
+
+		[types.wood_type.alexscaves]
+			pewen = true
+			thornwood = true
+
+	[types.leaves_type]
 
 		[types.leaves_type.ars_nouveau]
 			blue_archwood = true
@@ -29,8 +80,29 @@
 			purple_archwood = true
 			red_archwood = true
 
-		[types.leaves_type.silentgear]
-			netherwood = true
+		[types.leaves_type.aether]
+			golden_oak = true
+			holiday = true
+			decorated_holiday = true
+			crystal = true
+			crystal_fruit = true
+			skyroot = true
+
+		[types.leaves_type.deep_aether]
+			flowering_roseroot = true
+			blue_roseroot = true
+			flowering_blue_roseroot = true
+			roseroot = true
+			yagroot = true
+			cruderoot = true
+			conberry = true
+			sunroot = true
+
+		[types.leaves_type.alexscaves]
+			ancient = true
+
+		[types.leaves_type.thermal]
+			rubberwood = true
 
 		[types.leaves_type.integrateddynamics]
 			menril = true
@@ -38,34 +110,56 @@
 		[types.leaves_type.occultism]
 			otherworld = true
 
-		[types.leaves_type.aether]
-			skyroot = true
-			golden_oak = true
-			crystal = true
-			crystal_fruit = true
-			holiday = true
-			decorated_holiday = true
-
-		[types.leaves_type.deep_aether]
-			roseroot = true
-			flowering_roseroot = true
-			blue_roseroot = true
-			flowering_blue_roseroot = true
-			yagroot = true
-			cruderoot = true
-			conberry = true
-			sunroot = true
+		[types.leaves_type.ad_astra]
+			glacian = true
 
 		[types.leaves_type.deeperdarker]
 			echo = true
 
+		[types.leaves_type.tconstruct]
+			earth_slime = true
+			sky_slime = true
+			ender_slime = true
+
+		[types.leaves_type.quark]
+			ancient = true
+			blue_blossom = true
+			lavender_blossom = true
+			orange_blossom = true
+			yellow_blossom = true
+			red_blossom = true
+
 #Disables specific entries
 [entries]
 
-		[entries.wood_type.farmersdelight]
-			cabinet = true
+	[entries.wood_type]
+
+		[entries.wood_type.quark]
+			vertical_planks = true
+			post = true
+			trapped_chest = true
+			bookshelf = true
+			chest = true
+			stripped_post = true
+			ladder = true
+			hollow_log = true
+			vertical_slab = true
 
 		[entries.wood_type.functionalstorage]
 			1 = true
 			4 = true
 			2 = true
+
+		[entries.wood_type.create]
+			window = true
+			window_pane = true
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.quark]
+			hedge = true
+			leaf_carpet = true
+

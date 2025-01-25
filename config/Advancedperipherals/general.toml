@@ -1,3 +1,4 @@
+
 #Config to adjust general mod settings
 [General]
 	#Enables the debug mode. Only enable it if needed.
@@ -7,8 +8,7 @@
 	#Enables initial cooldown on peripheral initialization
 	isInitialCooldownEnabled = true
 	#Determinates initial cooldown sensitive level, values lower then this value will not trigger initial cooldown
-	# Default: 6000
-	# Range: > 0
+	#Range: > 0
 	initialCooldownSensitiveLevel = 6000
 
 [Unsafe]
@@ -16,3 +16,4 @@
 	enableUnsafe = false
 	#Ignore turtle peripheral item's NBT when equipping. **YOU WILL LOSE ALL NBT ON THE ITEM**
 	ignoreTurtlePeripheralItemNBT = false
+
