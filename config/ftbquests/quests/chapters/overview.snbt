@@ -1,0 +1,413 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overview"
+	group: ""
+	icon: "kubejs:basic_casing"
+	id: "33424EB754BEA9EA"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3132C22C828D762C"
+			tasks: [{
+				id: "5DA7A7CFFFA156C0"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			id: "726DBA2BCE3BC1D0"
+			tasks: [{
+				id: "022DDB43754E10DA"
+				item: "railcraft:water_tank_siding"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			id: "5EA28AF4ECC8D0B8"
+			tasks: [{
+				id: "43220539B10FB2E0"
+				item: "deeperdarker:blooming_sculk_stone"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			id: "530218D1D5E25133"
+			tasks: [{
+				id: "2DA7C08DE1C6C555"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "03BD0F8C48965711"
+			tasks: [{
+				id: "6236B1FCB6CAF1AF"
+				item: "industrialforegoing:fluid_extractor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "21255A5186967FEF"
+			tasks: [{
+				id: "4CBB230936FAC6C9"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			id: "77422EABB50A0901"
+			tasks: [{
+				id: "217FE4E8E14B92A0"
+				item: "actuallyadditions:atomic_reconstructor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			id: "505494A9F5740E0D"
+			tasks: [{
+				id: "270BEB8DF963375F"
+				item: "powah:thermo_generator_starter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "2EFE7BC162C12CB9"
+			tasks: [{
+				id: "7FDD40A86F4855CD"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			id: "6BDB18881BDA0DA5"
+			tasks: [{
+				id: "7B81F2AE00AFFFF0"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			id: "6D130ED5BD7A5D94"
+			tasks: [{
+				id: "4FB5515D2DFCD8D3"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			id: "636810E644CC895B"
+			tasks: [{
+				id: "6FC0594175420FE0"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			id: "17F168A01D533403"
+			tasks: [{
+				id: "132675A16E99B960"
+				item: "mekanismgenerators:fusion_reactor_controller"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			id: "53AE243DD9361D43"
+			tasks: [{
+				id: "771CD6D9CF835417"
+				item: "tfmg:pumpjack_crank"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "56738E386CDE51BB"
+			size: 1.25d
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			id: "666926FD2DAB92D2"
+			tasks: [
+				{
+					id: "6103701360E6C9C5"
+					item: "laserio:laser_node"
+					type: "item"
+				}
+				{
+					id: "7E846C3A1831492C"
+					item: "modularrouters:modular_router"
+					type: "item"
+				}
+				{
+					id: "47E36F0D6558CD24"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			id: "0652664879F9BACB"
+			tasks: [{
+				id: "30B50A2AA4872220"
+				item: "biomancy:decomposer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "6EC638E44173A558"
+			tasks: [{
+				id: "248D060A3BA88163"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			id: "7D1FFC0D83269D34"
+			tasks: [{
+				id: "34BC7BFE36C14112"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			id: "0BFB36D9EB9F62AA"
+			tasks: [{
+				id: "5D83E7A442F3DC5D"
+				item: "industrialforegoing:dissolution_chamber"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			id: "59F0960C1C9BC9FC"
+			tasks: [{
+				id: "05AF05947BAF1668"
+				item: "thermalendergy:endergy_upgrade_3"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "7B539847C09398AC"
+			tasks: [{
+				id: "040B60DC6B7042C4"
+				item: "mekanism:advanced_enriching_factory"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "0A0ACCCEC854F8FB"
+			tasks: [{
+				id: "050D598D713F123B"
+				item: "rftoolsdim:dimension_editor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			id: "266BBE444C86564A"
+			tasks: [{
+				id: "181A76CA2F9F18A8"
+				item: "fluxnetworks:flux_plug"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			id: "659193CDE87489E9"
+			tasks: [{
+				id: "543D04FC75034781"
+				item: "integratedscripting:part_terminal_scripting"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			id: "7408ED5123DAC86F"
+			tasks: [{
+				id: "6543DAF59612A814"
+				item: "ftbquests:barrier"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "6F6F2BAC97479577"
+			tasks: [{
+				id: "234476C2FC361596"
+				item: "expatternprovider:ex_drive"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			id: "4751560B0F348FB3"
+			tasks: [{
+				id: "4F4787A42F06EF23"
+				item: "aether:aether_grass_block"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			id: "03050A4D8CEED2FE"
+			size: 1.25d
+			tasks: [{
+				id: "3BD5F8FE41B64F06"
+				item: "extendedcrafting:epic_auto_table"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			id: "4464D3463D4DD612"
+			size: 1.5d
+			tasks: [{
+				id: "3C4B7E2DDBD2B91F"
+				item: "extendedcrafting:the_ultimate_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			id: "7CCEED7CE12EA9E4"
+			tasks: [{
+				id: "4DEE07589D57BD3A"
+				item: "minecraft:grass_block"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			id: "273C1140F13F2D71"
+			tasks: [{
+				id: "6E1168A8C58F1517"
+				item: "enderio:soul_binder"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			id: "0ADF9EBA8F9B5768"
+			tasks: [{
+				id: "6CBE939BF5970BFC"
+				item: "productivebees:powered_centrifuge"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "71A36963ACFCF8EF"
+			tasks: [{
+				id: "23688E5F1D49A08B"
+				item: {
+					Count: 1
+					id: "occultism:dictionary_of_spirits"
+					tag: {
+						"modonomicon:book_id": "occultism:dictionary_of_spirits"
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			id: "19AE4A8BB156ACC8"
+			tasks: [{
+				id: "5C5CA4AB4FF323CC"
+				item: "elementalcraft:extractor_improved"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			id: "07C5D0AC6859DCB5"
+			tasks: [{
+				id: "245C4E2B9E0883A3"
+				item: "rftoolspower:blazing_infuser"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "5B8C5D4FD90AEBC5"
+			tasks: [{
+				id: "6F0A9E2E6586E303"
+				item: "energizedpower:coal_engine"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "4EDE30545C5D4B15"
+			tasks: [{
+				id: "16D606CCFD86A9E1"
+				item: "computercraft:computer_normal"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Overview"
+}

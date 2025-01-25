@@ -29,7 +29,7 @@ const unifyChisel = (event) => {
 }
 
 ServerEvents.tags('item', event => {
-    event.add('poly:plastics', ['oritech:plastic_sheet', 'industrialforegoing:plastic', 'pneumaticcraft:plastic', 'mekanism:hdpe_sheet'])
+    event.add('poly:plastics', ['oritech:plastic_sheet', 'industrialforegoing:plastic', 'pneumaticcraft:plastic', 'mekanism:hdpe_sheet', 'tfmg:plastic_sheet'])
     event.add('poly:basic_caps', ['enderio:basic_capacitor', 'powah:capacitor_basic_large', 'tfmg:capacitor_'])
     event.add('poly:advanced_caps', ['enderio:double_layer_capacitor', 'powah:capacitor_blazing'])
     event.add("poly:cards", ['integrateddynamics:variable', 'computercraft:disk'])
