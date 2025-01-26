@@ -242,11 +242,6 @@
 		}
 		{
 			id: "0A0ACCCEC854F8FB"
-			tasks: [{
-				id: "050D598D713F123B"
-				item: "rftoolsdim:dimension_editor"
-				type: "item"
-			}]
 			x: 4.0d
 			y: 6.0d
 		}

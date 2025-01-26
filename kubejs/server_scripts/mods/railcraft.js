@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
         "type": "railcraft:rolling",
         "key": {
           "a": {
-            "tag": `#forge:plates/${wiremat}`
+            "item": `energizedpower:${wiremat}_plate`
           }
         },
         "pattern": [
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         ],
         "result": {
           "count": 6,
-          "id": `createaddition:${wiremat}_wire`
+          "item": `createaddition:${wiremat}_wire`
         }
       })
     })

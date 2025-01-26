@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
       E: '#poly:advanced_circuit',
       C: 'enderio:void_chassis',
       G: 'enderio:dark_bimetal_gear',
-      D: 'industrialforegoing:machine_frame_advanced'
+      D: 'energizedpower:advanced_machine_frame'
     }).id('mekanism:steel_casing')
   }
 })

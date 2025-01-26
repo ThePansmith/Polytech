@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
                 "tag": input
             },
             "result": {
-                "id": output
+                "item": output
             }
         })
     }
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
             ],
             "result": {
               "count": count,
-              "id": output
+              "item": output
             },
             "time": time
           })
