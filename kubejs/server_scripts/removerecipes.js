@@ -6,4 +6,5 @@ ServerEvents.recipes(event => {
     event.remove({id: /thermal:fire_charge/ })
     event.remove({id: /energizedpower:crafting.+_wire/ })
     event.remove({id: /tfmg:stonecutting.+_wire/ })
+  }
 })
