@@ -1,0 +1,18 @@
+{
+  "primaryColor": "#d3d3d3",
+  "secondaryColor": "#535353",
+  "flowerTag": "forge:plastic",
+  "size": 0.7,
+  "attributes": {
+    "endurance": 0
+  },
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:plastic",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ]
+}

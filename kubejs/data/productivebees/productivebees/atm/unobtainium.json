@@ -1,0 +1,20 @@
+{
+  "primaryColor": "#bc2feb",
+  "secondaryColor": "#2e237b",
+  "flowerTag": "forge:storage_blocks/unobtainium",
+  "selfbreed": false,
+  "invulnerability": [
+    "mekanism.radiation"
+  ],
+  "attributes": {
+    "endurance": 3
+  },
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

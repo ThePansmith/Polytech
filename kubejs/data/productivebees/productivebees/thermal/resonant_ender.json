@@ -1,0 +1,18 @@
+{
+  "primaryColor": "#161616",
+  "secondaryColor": "#6238757",
+  "particleColor": "#cc00fa",
+  "particleType": "portal",
+  "flowerTag": "productivebees:flowers/ender",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "size": 0.8,
+  "teleporting": true,
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

@@ -1,0 +1,15 @@
+{
+  "primaryColor": "#301b10",
+  "secondaryColor": "#804f40",
+  "particleColor": "#301b10",
+  "flowerBlock": "mysticalagriculture:soulium_block",
+  "size": 0.8,
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

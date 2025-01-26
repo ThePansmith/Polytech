@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#a66ef4",
+  "secondaryColor": "#064f2c",
+  "tertiaryColor": "#3500aa",
+  "particleColor": "#a66ef4",
+  "flowerTag": "productivebees:flowers/tanzanite",
+  "size": 0.6,
+  "renderer": "default_crystal",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

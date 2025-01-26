@@ -1,0 +1,19 @@
+{
+  "primaryColor": "#f2f24f",
+  "secondaryColor": "#d0581f",
+  "flowerTag": "forge:storage_blocks/allthemodium",
+  "selfbreed": false,
+  "breedingItem": "allthemodium:vibranium_ingot",
+  "breedingItemCount": 4,
+  "invulnerability": [
+    "mekanism.radiation"
+  ],
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

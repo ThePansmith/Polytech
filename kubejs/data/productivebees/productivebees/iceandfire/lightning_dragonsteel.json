@@ -1,0 +1,21 @@
+{
+  "primaryColor": "#4d3e7c",
+  "secondaryColor": "#9177ae",
+  "particleColor": "#8471a0",
+  "flowerBlock": "iceandfire:dragonsteel_lightning_block",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "size": 1.2,
+  "renderer": "thicc",
+  "attributes": {
+    "productivity": 1,
+    "endurance": 3
+  },
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

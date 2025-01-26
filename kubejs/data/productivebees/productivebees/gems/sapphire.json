@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#5241f3",
+  "secondaryColor": "#064f2c",
+  "tertiaryColor": "#000b7b",
+  "particleColor": "#5241f3",
+  "flowerTag": "productivebees:flowers/sapphire",
+  "size": 0.6,
+  "renderer": "default_crystal",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

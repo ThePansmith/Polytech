@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#412fbf",
+  "secondaryColor": "#56c693",
+  "particleColor": "#ffffe0",
+  "flowerBlock": "l2hostility:miracle_block",
+  "beeTexture": "productivebees:textures/entity/bee/miracle/bee",
+  "size": 0.6,
+  "selfbreed": false,
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

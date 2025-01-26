@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#d6ff75",
+  "secondaryColor": "#3e5b68",
+  "tertiaryColor": "#b2e25d",
+  "particleColor": "#d6ff75",
+  "flowerTag": "productivebees:flowers/jade",
+  "size": 0.6,
+  "renderer": "default_crystal",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

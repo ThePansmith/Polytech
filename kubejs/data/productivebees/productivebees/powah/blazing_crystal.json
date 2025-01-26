@@ -1,0 +1,14 @@
+{
+  "primaryColor": "#f2c735",
+  "secondaryColor": "#c9a324",
+  "flowerBlock": "powah:blazing_crystal_block",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

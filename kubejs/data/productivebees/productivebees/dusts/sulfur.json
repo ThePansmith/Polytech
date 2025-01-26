@@ -1,0 +1,15 @@
+{
+  "primaryColor": "#e4ff95",
+  "secondaryColor": "#c9ab4b",
+  "particleColor": "#f1f372",
+  "flowerTag": "productivebees:flowers/sulfur",
+  "renderer": "default_crystal",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

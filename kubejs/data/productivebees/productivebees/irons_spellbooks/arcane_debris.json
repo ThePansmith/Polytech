@@ -1,0 +1,16 @@
+{
+  "primaryColor": "#ffffff",
+  "secondaryColor": "#c7c7c7",
+  "tertiaryColor": "#999999",
+  "particleColor": "#858585",
+  "flowerBlock": "irons_spellbooks:arcane_debris",
+  "beeTexture": "productivebees:textures/entity/bee/arcane_debris/bee",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

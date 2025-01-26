@@ -1,0 +1,18 @@
+{
+  "primaryColor": "#49cc1d",
+  "secondaryColor": "#804f40",
+  "flowerTag": "forge:storage_blocks/terrasteel",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "selfbreed": false,
+  "invulnerability": [
+    "mekanism.radiation"
+  ],
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

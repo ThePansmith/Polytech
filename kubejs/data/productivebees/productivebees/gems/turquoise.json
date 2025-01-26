@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#24daac",
+  "secondaryColor": "#2e0b17",
+  "tertiaryColor": "#19ac80",
+  "particleColor": "#24daac",
+  "flowerTag": "productivebees:flowers/turquoise",
+  "size": 0.6,
+  "renderer": "default_crystal",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

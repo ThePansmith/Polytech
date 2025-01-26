@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#dbdbdb",
+  "secondaryColor": "#064f2c",
+  "tertiaryColor": "#8c8c8c",
+  "particleColor": "#dbdbdb",
+  "flowerTag": "productivebees:flowers/opal",
+  "size": 0.6,
+  "renderer": "default_crystal",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

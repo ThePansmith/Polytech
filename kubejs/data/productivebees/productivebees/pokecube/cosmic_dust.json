@@ -1,0 +1,14 @@
+{
+  "primaryColor": "#2394cc",
+  "secondaryColor": "#0f0f66",
+  "particleColor": "#2394cc",
+  "flowerTag": "forge:ores/cosmic",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

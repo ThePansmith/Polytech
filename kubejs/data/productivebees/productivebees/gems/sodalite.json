@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#4c4bff",
+  "secondaryColor": "#3e5b68",
+  "tertiaryColor": "#23389e",
+  "particleColor": "#4c4bff",
+  "flowerTag": "productivebees:flowers/sodalite",
+  "size": 0.6,
+  "renderer": "default_crystal",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

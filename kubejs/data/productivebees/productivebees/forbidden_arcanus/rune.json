@@ -1,0 +1,18 @@
+{
+  "primaryColor": "#620d5f",
+  "secondaryColor": "#8d2171",
+  "tertiaryColor": "#c12383",
+  "particleColor": "#eebcbe",
+  "flowerBlock": "forbidden_arcanus:rune_block",
+  "beeTexture": "productivebees:textures/entity/bee/rune/bee",
+  "size": 0.7,
+  "renderer": "default_crystal",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

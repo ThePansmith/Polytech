@@ -1,0 +1,15 @@
+{
+  "primaryColor": "#f4ffc3",
+  "secondaryColor": "#804f40",
+  "particleColor": "#dde8ae",
+  "flowerTag": "forge:storage_blocks/lumium",
+  "blinding": true,
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

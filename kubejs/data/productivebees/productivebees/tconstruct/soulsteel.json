@@ -1,0 +1,15 @@
+{
+  "primaryColor": "#5c4436",
+  "secondaryColor": "#1f0700",
+  "particleColor": "#5c4436",
+  "flowerTag": "forge:storage_blocks/soulsteel",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

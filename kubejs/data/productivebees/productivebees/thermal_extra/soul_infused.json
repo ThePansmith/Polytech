@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#b7785a",
+  "secondaryColor": "#db9e70",
+  "tertiaryColor": "#ffd68e",
+  "particleColor": "#ffd68e",
+  "flowerBlock": "thermal_extra:soul_infused_block",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "size": 0.7,
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

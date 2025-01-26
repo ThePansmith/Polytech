@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#d84e02",
+  "secondaryColor": "#2e0b17",
+  "tertiaryColor": "#340400",
+  "particleColor": "#d84e02",
+  "flowerTag": "productivebees:flowers/carnelian",
+  "size": 0.6,
+  "renderer": "default_crystal",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

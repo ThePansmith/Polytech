@@ -1,0 +1,14 @@
+{
+  "primaryColor": "#c44249",
+  "secondaryColor": "#470d2f",
+  "particleColor": "#df6d5c",
+  "flowerTag": "forge:storage_blocks/calorite",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

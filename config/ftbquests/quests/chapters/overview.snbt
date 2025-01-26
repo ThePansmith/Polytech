@@ -338,12 +338,20 @@
 			y: 4.0d
 		}
 		{
+			icon: "productivebees:powered_centrifuge"
 			id: "0ADF9EBA8F9B5768"
-			tasks: [{
-				id: "6CBE939BF5970BFC"
-				item: "productivebees:powered_centrifuge"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6CBE939BF5970BFC"
+					item: "productivebees:powered_centrifuge"
+					type: "item"
+				}
+				{
+					id: "0053E47C77E7C2DD"
+					item: "productivebees:bee_cage"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: 2.0d
 		}

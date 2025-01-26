@@ -1,0 +1,17 @@
+{
+  "primaryColor": "#510046",
+  "secondaryColor": "#2e0b17",
+  "tertiaryColor": "#c812aa",
+  "particleColor": "#510046",
+  "flowerTag": "productivebees:flowers/lepidolite",
+  "size": 0.6,
+  "renderer": "default_crystal",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

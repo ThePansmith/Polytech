@@ -1,0 +1,18 @@
+{
+  "primaryColor": "#e44f76",
+  "secondaryColor": "#e44f76",
+  "tertiaryColor": "#ec6f86",
+  "particleColor": "#fee9f0",
+  "flowerBlock": "thermal_extra:twinite_block",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "size": 0.7,
+  "selfbreed": false,
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

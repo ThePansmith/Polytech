@@ -1,0 +1,15 @@
+{
+  "primaryColor": "#C687BD",
+  "secondaryColor": "#7a5800",
+  "particleColor": "#C687BD",
+  "flowerTag": "forge:storage_blocks/amethyst_bronze",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

@@ -1,0 +1,16 @@
+{
+  "primaryColor": "#141715",
+  "particleColor": "#222924",
+  "flowerBlock": "fluxnetworks:flux_block",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "beeTexture": "productivebees:textures/entity/bee/flux/bee",
+  "size": 0.5,
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

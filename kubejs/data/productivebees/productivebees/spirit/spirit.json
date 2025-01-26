@@ -1,0 +1,14 @@
+{
+  "primaryColor": "#839cb8",
+  "secondaryColor": "#0d1119",
+  "particleColor": "#5c687d",
+  "flowerBlock": "spirit:soul_steel_block",
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}

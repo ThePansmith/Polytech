@@ -1,0 +1,16 @@
+{
+  "primaryColor": "#43806e",
+  "secondaryColor": "#9fe1cb",
+  "particleColor": "#f7fdfd",
+  "flowerTag": "forge:storage_blocks/prismalium",
+  "beeTexture": "productivebees:textures/entity/bee/prismalium/bee",
+  "size": 0.7,
+      "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]}
