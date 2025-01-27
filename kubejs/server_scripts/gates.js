@@ -155,6 +155,39 @@ ServerEvents.recipes(event => {
       E: 'powah:ender_core'
     }).id('enderio:void_chassis')
 
+    event.shaped('enderio:ensouled_chassis', [
+      'IEI',
+      'CRC',
+      'IEI'
+    ], {
+      C: 'enderio:soul_chain',
+      I: 'energizedpower:advanced_alloy_plate',
+      R: 'enderio:void_chassis',
+      E: 'enderio:end_steel_ingot'
+    }).id('enderio:ensouled_chassis')
+
+    event.shaped('2x fluxnetworks:flux_core', [
+      'IEI',
+      'CRC',
+      'IEI'
+    ], {
+      I: 'fluxnetworks:flux_dust',
+      C: 'enderio:vibrant_gear',
+      R: 'mekanism:ultimate_control_circuit',
+      E: 'tconstruct:manyullyn_ingot'
+    }).id('fluxnetworks:fluxcore')
+
+    event.shaped('fluxnetworks:flux_block', [
+      'IEI',
+      'CRC',
+      'IEI'
+    ], {
+      C: 'fluxnetworks:flux_dust',
+      I: 'energizedpower:advanced_alloy_plate',
+      R: 'appflux:energy_processor',
+      E: 'tconstruct:hepatizon_ingot'
+    }).id('fluxnetworks:fluxblock')
+
     event.shaped('mekanism:metallurgic_infuser', [
       'SPS',
       'AOA',
