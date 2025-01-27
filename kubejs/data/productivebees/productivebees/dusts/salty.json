@@ -6,10 +6,10 @@
   "waterproof": true,
       "conditions": [
         {
-            "type": "forge:not",
             "value": {
-                "type": "forge:mod_loaded",
-                "modid": "productivebees"
-            }
-        }
+              "tag": "forge:salts",
+              "type": "forge:tag_empty"
+            },
+            "type": "forge:not"
+          }
     ]}
