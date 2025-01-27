@@ -90,6 +90,17 @@ ServerEvents.recipes(event => {
       S: '#poly:aa_casing_prereq'
     }).id("actuallyadditions:iron_casing")
 
+    event.shaped('kubejs:reinforced_stone', [
+      'BCB',
+      'CSC',
+      'BCB'
+    ], {
+      B: 'tconstruct:obsidian_pane',
+      C: '#poly:basic_circuit',
+      S: 'copperandtuffbackport:copper_grate',
+    })
+
+
     event.replaceInput({ id: /hostile/ }, '#forge:obsidians', 'kubejs:predictive_casing')
     event.shaped('kubejs:predictive_casing', [
       'BGB',
