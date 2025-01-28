@@ -172,8 +172,8 @@ ServerEvents.recipes(event => {
       'IEI'
     ], {
       I: 'fluxnetworks:flux_dust',
-      C: 'enderio:vibrant_gear',
-      R: 'mekanism:ultimate_control_circuit',
+      R: 'enderio:vibrant_gear',
+      C: 'mekanism:ultimate_control_circuit',
       E: 'tconstruct:manyullyn_ingot'
     }).id('fluxnetworks:fluxcore')
 
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
       'CRC',
       'IEI'
     ], {
-      C: 'fluxnetworks:flux_dust',
+      C: 'fluxnetworks:flux_core',
       I: 'energizedpower:advanced_alloy_plate',
       R: 'appflux:energy_processor',
       E: 'tconstruct:hepatizon_ingot'
