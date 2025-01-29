@@ -90,24 +90,36 @@ ServerEvents.recipes(event => {
       S: '#poly:aa_casing_prereq'
     }).id("actuallyadditions:iron_casing")
 
-    event.shaped('kubejs:reinforced_stone', [
+    event.shaped('thermal:machine_frame', [
+      'AAA',
+      'GSG',
+      'DCD'
+    ], {
+      G: 'thermal:redstone_servo',
+      A: '#forge:ingots/aluminum',
+      C: 'thermal:rf_coil',
+      S: 'actuallyadditions:iron_casing',
+      D: 'actuallyadditions:empowered_void_crystal'
+    }).id("thermal:machine_frame")
+
+    event.shaped('2x kubejs:reinforced_stone', [
       'BCB',
       'CSC',
       'BCB'
     ], {
-      B: 'tconstruct:obsidian_pane',
-      C: '#poly:basic_circuit',
+      C: 'railcraft:reinforced_rail',
+      B: 'quark:sturdy_stone',
       S: 'copperandtuffbackport:copper_grate',
     })
 
 
-    event.replaceInput({ id: /hostile/ }, '#forge:obsidians', 'kubejs:predictive_casing')
+    event.replaceInput({ id: /hostile/ }, '#forge:obsidian', 'kubejs:predictive_casing')
     event.shaped('kubejs:predictive_casing', [
       'BGB',
       'CSC',
       'BGB'
     ], {
-      B: 'actuallyadditions:void_crystal',
+      B: 'actuallyadditions:empowered_void_crystal',
       G: '#poly:plastics',
       C: '#poly:basic_circuit',
       S: 'enderio:dark_steel_block',
