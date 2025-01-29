@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
             "type": "actuallyadditions:laser",
             "energy": rf,
             "ingredient": {
-                "tag": input
+                "item": input
             },
             "result": {
                 "item": output

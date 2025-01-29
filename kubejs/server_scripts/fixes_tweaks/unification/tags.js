@@ -35,6 +35,7 @@ ServerEvents.tags('item', event => {
     event.add("poly:cards", ['integrateddynamics:variable', 'computercraft:disk'])
     event.add("poly:energized_metal", ['powah:steel_energized', 'tfmg:magnetic_ingot'])
     event.add("poly:aa_casing_prereq", ['rftoolsbase:machine_frame', 'industrialforegoing:machine_frame_simple'])
+    event.add("poly:adastra_casing_prereq", ['mekanism:steel_casing', 'enderio:ensouled_chassis'])
     event.add("poly:basic_circuit", ['mekanism:basic_control_circuit', 'energizedpower:basic_circuit', 'forestry:circuit_board_basic'])
     event.add("poly:advanced_circuit", ['mekanism:advanced_control_circuit', 'energizedpower:advanced_circuit', 'forestry:circuit_board_enhanced'])
 

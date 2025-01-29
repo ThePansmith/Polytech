@@ -223,5 +223,18 @@ ServerEvents.recipes(event => {
       G: 'enderio:dark_bimetal_gear',
       D: 'energizedpower:advanced_machine_frame'
     }).id('mekanism:steel_casing')
+
+    event.shaped('ad_astra:nasa_workbench', [
+      'IEI',
+      'NAN',
+      'CRC'
+    ], {
+      I: 'powah:energizing_rod_niotic',
+      R: '#poly:adastra_casing_prereq',
+      E: '#poly:advanced_circuit',
+      A: 'energizedpower:assembling_machine',
+      N: 'minecraft:netherite_block',
+      C: 'jaopca:storage_blocks.energized_copper'
+    }).id('ad_astra:nasa_workbench')
   }
 })
