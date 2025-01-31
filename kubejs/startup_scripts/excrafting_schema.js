@@ -68,4 +68,11 @@ StartupEvents.recipeSchemaRegistry(event => {
         $NumberComponent.INT.key("tier").defaultOptional().preferred("tier")
     )
     );
+    event.register("extendedcrafting:shapeless_table", new $RecipeSchema(
+        $ShapelessRecipeSchema.RESULT,
+        $ShapelessRecipeSchema.INGREDIENTS,
+        $NumberComponent.INT.key("tier").defaultOptional().preferred("tier")
+    )
+    );
+
 });

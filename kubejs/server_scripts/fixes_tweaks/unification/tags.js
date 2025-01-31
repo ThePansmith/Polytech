@@ -29,15 +29,15 @@ const unifyChisel = (event) => {
 }
 
 ServerEvents.tags('item', event => {
-    event.add('poly:plastics', ['oritech:plastic_sheet', 'industrialforegoing:plastic', 'pneumaticcraft:plastic', 'mekanism:hdpe_sheet', 'tfmg:plastic_sheet'])
+    event.add('poly:plastics', [ 'industrialforegoing:plastic', 'thermal:cured_rubber', 'mekanism:hdpe_sheet', 'tfmg:plastic_sheet'])
     event.add('poly:basic_caps', ['enderio:basic_capacitor', 'powah:capacitor_basic_large', 'tfmg:capacitor_'])
     event.add('poly:advanced_caps', ['enderio:double_layer_capacitor', 'powah:capacitor_blazing'])
     event.add("poly:cards", ['integrateddynamics:variable', 'computercraft:disk'])
     event.add("poly:energized_metal", ['powah:steel_energized', 'tfmg:magnetic_ingot'])
     event.add("poly:aa_casing_prereq", ['rftoolsbase:machine_frame', 'industrialforegoing:machine_frame_simple'])
     event.add("poly:adastra_casing_prereq", ['mekanism:steel_casing', 'enderio:ensouled_chassis'])
-    event.add("poly:basic_circuit", ['mekanism:basic_control_circuit', 'energizedpower:basic_circuit', 'forestry:circuit_board_basic'])
-    event.add("poly:advanced_circuit", ['mekanism:advanced_control_circuit', 'energizedpower:advanced_circuit', 'forestry:circuit_board_enhanced'])
+    event.add("poly:basic_circuit", ['mekanism:basic_control_circuit', 'energizedpower:basic_circuit'])
+    event.add("poly:advanced_circuit", ['mekanism:advanced_control_circuit', 'energizedpower:advanced_circuit'])
 
 
     event.add('forge:heads', 'enderio:enderman_head')

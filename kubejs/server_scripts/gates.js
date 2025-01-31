@@ -7,6 +7,8 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: /powah/ }, 'minecraft:iron_ingot', '#forge:plates/steel')
     event.replaceInput({ id: /laserio/ }, 'minecraft:iron_ingot', '#forge:ingots/steel')
     event.replaceInput({ id: 'modularrouters:modular_router' }, 'modularrouters:blank_module', 'industrialforegoing:machine_frame_pity')
+    event.replaceInput({ id: 'ad_astra:etrionic_blast_furnace' }, 'minecraft:blast_furnace', 'mekanism:steel_casing')
+
 
     // Machine casings and otherwise
     // These generally should have multiple ways to obtain, be it tagged items, alterative recipes, or otherwise
