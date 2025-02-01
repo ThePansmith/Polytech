@@ -1,6 +1,5 @@
 /**
- * KubeJS recipe schema for use in defining custom ExtendedCrafting recipes.
- * Applications of these can be seen in server_scripts/extendedcrafting.js
+ * KubeJS recipe schemas for use in defining custom recipes.
  */
 const $RecipeSchema = Java.loadClass('dev.latvian.mods.kubejs.recipe.schema.RecipeSchema');
 const $ShapedRecipeSchema = Java.loadClass('dev.latvian.mods.kubejs.recipe.schema.minecraft.ShapedRecipeSchema');
@@ -74,5 +73,11 @@ StartupEvents.recipeSchemaRegistry(event => {
         $NumberComponent.INT.key("tier").defaultOptional().preferred("tier")
     )
     );
-
+    // // Industrial foregoing
+    // event.register("industrialforegoing:dissolution_chamber", new $RecipeSchema(
+    //     $ItemComponents.OUTPUT.key("result"),
+    //     $ItemComponents.UNWRAPPED_INPUT_ARRAY.key("input"),
+    //     $NumberComponent.INT.key("processingtime").defaultoptional(200).preferred("processingtime")
+    // )
+    // );
 });

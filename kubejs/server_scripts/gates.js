@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     // These generally should have multiple ways to obtain, be it tagged items, alterative recipes, or otherwise
     // Remember that magic is not required, but can help you to get ahead. Magic recipes should go in their applicable mod js file.
     // Currently most all of these are just crafting table recipes, but don't be afraid to mix it up. Assemblers, Sequences (once create port is done), Empowerment, etc are all fair game
-    
+
 
     event.shaped('2x industrialforegoing:machine_frame_pity', [
       'WSW',
@@ -59,6 +59,57 @@ ServerEvents.recipes(event => {
       B: '#forge:plates/invar',
     }).id("energizedpower:crafting/hardened_machine_frame")
 
+    event.shaped('energizedpower:advanced_machine_frame', [
+      'BGB',
+      'OCO',
+      'FGF'
+    ], {
+      C: 'energizedpower:hardened_machine_frame',
+      G: '#poly:advanced_circuit',
+      F: '#forge:plates/advanced_alloy',
+      B: 'minecraft:netherite_ingot',
+      O: 'actuallyadditions:advanced_coil'
+    }).id("energizedpower:crafting/advanced_machine_frame")
+
+    event.remove({ output: 'energizedpower:reinforced_advanced_machine_frame' })
+    event.custom(
+      {
+        "type": "industrialforegoing:dissolution_chamber",
+        "input": [
+          {
+            "item": "energizedpower:energized_crystal_matrix"
+          },
+          {
+            "item": "energizedpower:energized_crystal_matrix"
+          },
+          {
+            "item": "energizedpower:energized_crystal_matrix"
+          },
+          {
+            "item": "energizedpower:processing_unit"
+          },
+          {
+            "item": "energizedpower:processing_unit"
+          },
+          {
+            "item": "industrialforegoing:pink_slime_ingot"
+          },
+          {
+            "item": "energizedpower:advanced_machine_frame"
+          },
+          {
+            "item": "industrialforegoing:pink_slime_ingot"
+          },
+        ],
+        "inputFluid": "{Amount:250,FluidName:\"tconstruct:ender_slime\"}",
+        "output": {
+          "count": 1,
+          "item": "energizedpower:reinforced_advanced_machine_frame"
+        },
+        "processingTime": 300
+      })
+
+
     event.shaped('rftoolsbase:machine_frame', [
       'BPB',
       'FCF',
@@ -70,7 +121,7 @@ ServerEvents.recipes(event => {
       B: '#forge:plates/steel'
     }).id("rftoolsbase:machine_frame")
 
-    event.remove({ id: 'productivebees:bee_cage_block' }) //have an alt magic recipe thats cheaper
+    event.remove({ id: 'productivebees:bee_cage_block' })
     event.shaped('8x productivebees:bee_cage', [
       'LPL',
       'LHL',
@@ -78,8 +129,8 @@ ServerEvents.recipes(event => {
     ], {
       L: '#minecraft:logs',
       P: '#poly:plastics',
-      H: 'minecraft:honey_block' 
-    }).id("productivebees:bee_cage") 
+      H: 'minecraft:honey_block'
+    }).id("productivebees:bee_cage")
 
     event.shaped('actuallyadditions:iron_casing', [
       'DGD',
@@ -109,8 +160,8 @@ ServerEvents.recipes(event => {
       'CSC',
       'BCB'
     ], {
-      C: 'railcraft:reinforced_rail',
-      B: 'quark:sturdy_stone',
+      B: 'railcraft:reinforced_rail',
+      C: 'quark:sturdy_stone',
       S: 'copperandtuffbackport:copper_grate',
     })
 

@@ -8,8 +8,7 @@ if (isExpertMode) {
     event.replaceInput({ output: 'pipez:energy_pipe' }, '#forge:dusts/redstone', 'thermal:energy_duct')
     event.replaceInput({ id: 'thermal:energy_duct_4' }, '#c:glass_blocks', 'quark:pipe')
     event.replaceInput({ id: 'thermal:fluid_duct_4' }, '#forge:ingots/lead', 'quark:pipe')
-
-
+    event.replaceInput({ output: 'integrateddynamics:cable' }, '#forge:dusts/redstone', 'pipez:universal_pipe')
 
     event.replaceInput({ id: /laserio/ }, 'minecraft:iron_ingot', '#forge:plates/steel')
     event.replaceInput({ output: 'prettypipes:pipe' }, 'minecraft:copper_ingot', '#forge:ingots/steel')
