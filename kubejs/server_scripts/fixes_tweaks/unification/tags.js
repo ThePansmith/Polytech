@@ -45,15 +45,6 @@ ServerEvents.tags('item', event => {
     event.add("forge:sawdust", "#forge:dusts/wood")
 })
 
-ServerEvents.tags('block', event => {
-
-    unifyChisel(event);
-})
-
-ServerEvents.tags('fluid', event => {
-
-    unifyChisel(event);
-})
 
 // // Unification regexes are definited in startup script _initial.js
 // ServerEvents.tags('item', event => {

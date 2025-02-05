@@ -125,11 +125,12 @@ ServerEvents.recipes(event => {
     event.shaped('8x productivebees:bee_cage', [
       'LPL',
       'LHL',
-      'LPL'
+      'LSL'
     ], {
       L: '#minecraft:logs',
       P: '#poly:plastics',
-      H: 'minecraft:honey_block'
+      H: 'minecraft:honey_block',
+      S: 'powah:steel_energized'
     }).id("productivebees:bee_cage")
 
     event.shaped('actuallyadditions:iron_casing', [
