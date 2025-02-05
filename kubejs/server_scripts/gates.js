@@ -26,6 +26,45 @@ ServerEvents.recipes(event => {
       W: '#minecraft:logs'
     }).id('industrialforegoing:machine_frame_pity')
 
+    event.remove({ output: 'industrialforegoing:machine_frame_simple' })
+    event.custom(
+      {
+        "type": "industrialforegoing:dissolution_chamber",
+        "input": [
+          {
+            "tag": "poly:plastics"
+          },
+          {
+            "item": "industrialforegoing:machine_frame_pity"
+          },
+          {
+            "tag": "poly:plastics"
+          },
+          {
+            "item": "minecraft:nether_brick"
+          },
+          {
+            "item": "minecraft:nether_brick"
+          },
+          {
+            "item": "energizedpower:steel_ingot"
+          },
+          {
+            "tag": "forge:gears/bronze"
+          },
+          {
+            "item": "energizedpower:steel_ingot"
+          },
+        ],
+        "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:latex\"}",
+        "output": {
+          "count": 1,
+          "item": "industrialforegoing:machine_frame_simple"
+        },
+        "processingTime": 300
+      })
+
+
     // event.remove({ output: 'oritech:machine_core_3' })
     // event.shaped('oritech:machine_core_3', [
     //   'BRB',
