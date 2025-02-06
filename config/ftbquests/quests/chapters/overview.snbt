@@ -35,7 +35,7 @@
 				item: "deeperdarker:blooming_sculk_stone"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
@@ -99,14 +99,14 @@
 				item: "botania:mana_pool"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 0.0d
+			x: 16.0d
+			y: -2.0d
 		}
 		{
 			id: "6BDB18881BDA0DA5"
 			tasks: [{
-				id: "7B81F2AE00AFFFF0"
-				item: "hostilenetworks:blank_data_model"
+				id: "48554285B926F4D3"
+				item: "hostilenetworks:sim_chamber"
 				type: "item"
 			}]
 			x: 6.0d
@@ -187,8 +187,8 @@
 				item: "biomancy:decomposer"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: 16.0d
+			y: 2.0d
 		}
 		{
 			id: "6EC638E44173A558"
@@ -207,17 +207,7 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.0d
-		}
-		{
-			id: "0BFB36D9EB9F62AA"
-			tasks: [{
-				id: "5D83E7A442F3DC5D"
-				item: "industrialforegoing:dissolution_chamber"
-				type: "item"
-			}]
-			x: 6.0d
+			x: -4.0d
 			y: 2.0d
 		}
 		{
@@ -242,6 +232,11 @@
 		}
 		{
 			id: "0A0ACCCEC854F8FB"
+			tasks: [{
+				id: "3C000B0C1CD56668"
+				item: "industrialforegoingsouls:soul_laser_base"
+				type: "item"
+			}]
 			x: 4.0d
 			y: 6.0d
 		}
@@ -252,7 +247,7 @@
 				item: "fluxnetworks:flux_plug"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 0.0d
 			y: 4.0d
 		}
 		{
@@ -262,7 +257,7 @@
 				item: "integratedscripting:part_terminal_scripting"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.0d
 			y: 2.0d
 		}
 		{
@@ -292,7 +287,7 @@
 				item: "aether:aether_grass_block"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 18.0d
 			y: -2.0d
 		}
 		{
@@ -328,16 +323,6 @@
 			y: -2.0d
 		}
 		{
-			id: "273C1140F13F2D71"
-			tasks: [{
-				id: "6E1168A8C58F1517"
-				item: "enderio:soul_binder"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 4.0d
-		}
-		{
 			icon: "productivebees:powered_centrifuge"
 			id: "0ADF9EBA8F9B5768"
 			tasks: [
@@ -369,7 +354,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			id: "19AE4A8BB156ACC8"
@@ -378,8 +363,8 @@
 				item: "elementalcraft:extractor_improved"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 4.0d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			id: "07C5D0AC6859DCB5"
@@ -402,14 +387,46 @@
 			y: 0.0d
 		}
 		{
-			id: "4EDE30545C5D4B15"
+			id: "0A99408CEFC2D3E6"
+			tasks: [
+				{
+					id: "5F06A405C38CC535"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+				{
+					id: "4A13F5AC37368C72"
+					item: "create_enchantment_industry:printer"
+					type: "item"
+				}
+				{
+					id: "7791603D199E47D8"
+					item: "createoreexcavation:drilling_machine"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			id: "4A6D3876EAEA2A5F"
 			tasks: [{
-				id: "16D606CCFD86A9E1"
-				item: "computercraft:computer_normal"
+				id: "4E6FFB61A1C6A3E9"
+				item: "advgenerators:turbine_tier4"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			id: "1C3CF7B28EAAA7D1"
+			tasks: [{
+				id: "6B48321411EB3FA7"
+				item: "computercraft:monitor_normal"
 				type: "item"
 			}]
 			x: 8.0d
-			y: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "Overview"

@@ -6,6 +6,79 @@
 	id: "47F9E04C4A4529F7"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "680970036AAE8E23"
+			tasks: [{
+				id: "53C32B0F9E98717B"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			id: "18747A2D68DB0535"
+			tasks: [{
+				id: "0C3042E029AEB6A6"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			id: "34781492AF3CDF89"
+			tasks: [{
+				id: "294D01C718609B5B"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			id: "6F5FBFD9FAECDE74"
+			tasks: [
+				{
+					id: "6145E305C4B1A54B"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					id: "170B931D7908F3A3"
+					item: "railcraft:blast_furnace_bricks"
+					type: "item"
+				}
+				{
+					id: "2F09E950E457491E"
+					item: "aether:altar"
+					type: "item"
+				}
+				{
+					id: "63DEC4DCABE2E69A"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					id: "7BE731F4E233786E"
+					item: "ars_nouveau:alteration_table"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			id: "485C26905DF11B94"
+			tasks: [{
+				id: "2F177A5FD81FE428"
+				item: "energizedpower:steel_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+	]
 	title: "Getting Started"
 }
