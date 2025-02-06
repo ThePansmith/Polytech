@@ -64,7 +64,81 @@ ServerEvents.recipes(event => {
         "processingTime": 300
       })
 
+      event.remove({ output: 'industrialforegoing:machine_frame_advanced' })
+      event.custom(
+        {
+          "type": "industrialforegoing:dissolution_chamber",
+          "input": [
+            {
+              "tag": "poly:plastics"
+            },
+            {
+              "item": "industrialforegoing:machine_frame_simple"
+            },
+            {
+              "tag": "poly:plastics"
+            },
+            {
+              "tag": "poly:advanced_circuit"
+            },
+            {
+              "tag": "poly:advanced_circuit"
+            },
+            {
+              "item": "energizedpower:advanced_alloy_ingot"
+            },
+            {
+              "tag": "forge:gears/netherite"
+            },
+            {
+              "item": "energizedpower:advanced_alloy_ingot"
+            },
+          ],
+          "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:latex\"}",
+          "output": {
+            "count": 1,
+            "item": "industrialforegoing:machine_frame_advanced"
+          },
+          "processingTime": 300
+        })
 
+        event.remove({ output: 'industrialforegoing:machine_frame_supreme' })
+        event.custom(
+          {
+            "type": "industrialforegoing:dissolution_chamber",
+            "input": [
+              {
+                "item": "mekanism:hdpe_sheet"
+              },
+              {
+                "item": "industrialforegoing:machine_frame_advanced"
+              },
+              {
+                "item": "mekanism:hdpe_sheet"
+              },
+              {
+                "item": "mekanism:ultimate_control_circuit"
+              },
+              {
+                "item": "mekanism:ultimate_control_circuit"
+              },
+              {
+                "item": "energizedpower:energized_crystal_matrix"
+              },
+              {
+                "tag": "forge:gears/stellarium"
+              },
+              {
+                "item": "energizedpower:energized_crystal_matrix"
+              },
+            ],
+            "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:latex\"}",
+            "output": {
+              "count": 1,
+              "item": "industrialforegoing:machine_frame_supreme"
+            },
+            "processingTime": 300
+          })
     // event.remove({ output: 'oritech:machine_core_3' })
     // event.shaped('oritech:machine_core_3', [
     //   'BRB',
@@ -271,7 +345,7 @@ ServerEvents.recipes(event => {
       E: 'enderio:end_steel_ingot'
     }).id('enderio:ensouled_chassis')
 
-    event.shaped('2x fluxnetworks:flux_core', [
+    event.shaped('4x fluxnetworks:flux_core', [
       'IEI',
       'CRC',
       'IEI'
@@ -282,14 +356,14 @@ ServerEvents.recipes(event => {
       E: 'tconstruct:manyullyn_ingot'
     }).id('fluxnetworks:fluxcore')
 
-    event.shaped('fluxnetworks:flux_block', [
+    event.shaped('2x fluxnetworks:flux_block', [
       'IEI',
       'CRC',
       'IEI'
     ], {
       C: 'fluxnetworks:flux_core',
       I: 'energizedpower:advanced_alloy_plate',
-      R: 'appflux:energy_processor',
+      R: 'energizedpower:reinforced_advanced_machine_frame',
       E: 'tconstruct:hepatizon_ingot'
     }).id('fluxnetworks:fluxblock')
 
