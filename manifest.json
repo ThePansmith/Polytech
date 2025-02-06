@@ -1,5 +1,19 @@
 {
-    "author": "Pansmith",
+    "minecraft": {
+        "version": "1.20.1",
+        "modLoaders": [
+          {
+            "id": "forge-47.3.7",
+            "primary": true
+          }
+        ]
+      },
+      "manifestType": "minecraftModpack",
+      "manifestVersion": 1,
+      "name": "Polytech",
+      "version": "development",
+      "author": "Pansmith",
+      "overrides": "overrides",
     "files": [
         {
             "fileID": 4616683,
@@ -1147,23 +1161,14 @@
             "required": true
         },
         {
+            "fileID": 6161202,
+            "projectID": 1194196,
+            "required": true
+        },
+        {
             "fileID": 5712546,
             "projectID": 260912,
             "required": true
         }
-    ],
-    "manifestType": "minecraftModpack",
-    "manifestVersion": 1,
-    "minecraft": {
-        "modLoaders": [
-            {
-                "id": "forge-47.3.0",
-                "primary": true
-            }
-        ],
-        "version": "1.20.1"
-    },
-    "name": "Polytech",
-    "overrides": "overrides",
-    "version": "development"
+    ]
 }
