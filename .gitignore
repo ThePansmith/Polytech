@@ -18,6 +18,7 @@
 !/config/lostcities/profiles/monidefault.json
 !/mods/systeams*
 !/mods/ExtendedCrafting*
+!/.vscode/polytech.code-workspace
 
 /mods/.index
 /mods/.connector
