@@ -289,7 +289,7 @@ ServerEvents.recipes(event => {
       B: 'actuallyadditions:empowered_void_crystal',
       G: '#poly:plastics',
       C: '#poly:basic_circuit',
-      S: 'enderio:dark_steel_block',
+      S: 'industrialforegoing:machine_frame_advanced',
     })
 
     // event.shaped('6x kubejs:predictive_casing', [
