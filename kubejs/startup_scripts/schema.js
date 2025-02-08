@@ -76,31 +76,31 @@ StartupEvents.recipeSchemaRegistry(event => {
         $NumberComponent.INT.key("tier").defaultOptional().preferred("tier")
     )
     );
-    // // Industrial foregoing
-    // event.register("industrialforegoing:dissolution_chamber", new $RecipeSchema(
-    //     $ItemComponents.OUTPUT.key("output"),
-    //     $FluidComponents.OUTPUT.key("outputFluid").allowEmpty(),
-    //     $ItemComponents.INPUT_ARRAY.key("input"),
-    //     $FluidComponents.INPUT.key("inputFluid"),
-    //     $NumberComponent.INT.key("processingtime").defaultOptional().preferred("processingtime")
-    // )
-    // );
-    // // Actually Additions
-    // event.register("actuallyadditions:laser", new $RecipeSchema(
-    //     $ItemComponents.OUTPUT.key("result"),
-    //     $ItemComponents.INPUT.key("ingredient"),
-    //     $NumberComponent.INT.key("energy").defaultOptional().preferred("energy")
-    // )
-    // );
+    // Industrial foregoing
+    event.register("industrialforegoing:dissolution_chamber", new $RecipeSchema(
+        $ItemComponents.OUTPUT.key("output"),
+        $FluidComponents.OUTPUT.key("outputFluid").allowEmpty(),
+        $ItemComponents.INPUT_ARRAY.key("input"),
+        $FluidComponents.INPUT.key("inputFluid"),
+        $NumberComponent.INT.key("processingtime").defaultOptional().preferred("processingtime")
+    )
+    );
+    // Actually Additions
+    event.register("actuallyadditions:laser", new $RecipeSchema(
+        $ItemComponents.OUTPUT.key("result"),
+        $ItemComponents.INPUT.key("ingredient"),
+        $NumberComponent.INT.key("energy").defaultOptional().preferred("energy")
+    )
+    );
 
-    // event.register("actuallyadditions:empowering", new $RecipeSchema(
-    //     $ItemComponents.OUTPUT.key("result"),
-    //     $ItemComponents.INPUT.key("base"),
-    //     $ItemComponents.INPUT_ARRAY.key("modifiers"),
-    //     $NumberComponent.INT.key("energy").defaultOptional().preferred("energy"),
-    //     $NumberComponent.INT.key("color").defaultOptional().preferred("color"),
-    //     $NumberComponent.INT.key("time").defaultOptional().preferred("time")
-    // )
-    // );
+    event.register("actuallyadditions:empowering", new $RecipeSchema(
+        $ItemComponents.OUTPUT.key("result"),
+        $ItemComponents.INPUT.key("base"),
+        $ItemComponents.INPUT_ARRAY.key("modifiers"),
+        $NumberComponent.INT.key("energy").defaultOptional().preferred("energy"),
+        $NumberComponent.INT.key("color").defaultOptional().preferred("color"),
+        $NumberComponent.INT.key("time").defaultOptional().preferred("time")
+    )
+    );
 
 });

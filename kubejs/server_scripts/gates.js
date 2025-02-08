@@ -16,129 +16,8 @@ ServerEvents.recipes(event => {
     // Currently most all of these are just crafting table recipes, but don't be afraid to mix it up. Assemblers, Sequences (once create port is done), Empowerment, etc are all fair game
 
 
-    event.shaped('2x industrialforegoing:machine_frame_pity', [
-      'WSW',
-      'SCS',
-      'WSW'
-    ], {
-      S: '#forge:plates/steel',
-      C: 'tfmg:copper_coil',
-      W: '#minecraft:logs'
-    }).id('industrialforegoing:machine_frame_pity')
 
-    event.remove({ output: 'industrialforegoing:machine_frame_simple' })
-    event.custom(
-      {
-        "type": "industrialforegoing:dissolution_chamber",
-        "input": [
-          {
-            "tag": "poly:plastics"
-          },
-          {
-            "item": "industrialforegoing:machine_frame_pity"
-          },
-          {
-            "tag": "poly:plastics"
-          },
-          {
-            "item": "minecraft:nether_brick"
-          },
-          {
-            "item": "minecraft:nether_brick"
-          },
-          {
-            "item": "energizedpower:steel_ingot"
-          },
-          {
-            "tag": "forge:gears/bronze"
-          },
-          {
-            "item": "energizedpower:steel_ingot"
-          },
-        ],
-        "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:latex\"}",
-        "output": {
-          "count": 1,
-          "item": "industrialforegoing:machine_frame_simple"
-        },
-        "processingTime": 300
-      })
 
-      event.remove({ output: 'industrialforegoing:machine_frame_advanced' })
-      event.custom(
-        {
-          "type": "industrialforegoing:dissolution_chamber",
-          "input": [
-            {
-              "tag": "poly:plastics"
-            },
-            {
-              "item": "industrialforegoing:machine_frame_simple"
-            },
-            {
-              "tag": "poly:plastics"
-            },
-            {
-              "tag": "poly:advanced_circuit"
-            },
-            {
-              "tag": "poly:advanced_circuit"
-            },
-            {
-              "item": "energizedpower:advanced_alloy_ingot"
-            },
-            {
-              "tag": "forge:gears/netherite"
-            },
-            {
-              "item": "energizedpower:advanced_alloy_ingot"
-            },
-          ],
-          "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:latex\"}",
-          "output": {
-            "count": 1,
-            "item": "industrialforegoing:machine_frame_advanced"
-          },
-          "processingTime": 300
-        })
-
-        event.remove({ output: 'industrialforegoing:machine_frame_supreme' })
-        event.custom(
-          {
-            "type": "industrialforegoing:dissolution_chamber",
-            "input": [
-              {
-                "item": "mekanism:hdpe_sheet"
-              },
-              {
-                "item": "industrialforegoing:machine_frame_advanced"
-              },
-              {
-                "item": "mekanism:hdpe_sheet"
-              },
-              {
-                "item": "mekanism:ultimate_control_circuit"
-              },
-              {
-                "item": "mekanism:ultimate_control_circuit"
-              },
-              {
-                "item": "energizedpower:energized_crystal_matrix"
-              },
-              {
-                "tag": "forge:gears/stellarium"
-              },
-              {
-                "item": "energizedpower:energized_crystal_matrix"
-              },
-            ],
-            "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:latex\"}",
-            "output": {
-              "count": 1,
-              "item": "industrialforegoing:machine_frame_supreme"
-            },
-            "processingTime": 300
-          })
     // event.remove({ output: 'oritech:machine_core_3' })
     // event.shaped('oritech:machine_core_3', [
     //   'BRB',
@@ -184,43 +63,43 @@ ServerEvents.recipes(event => {
       O: 'actuallyadditions:advanced_coil'
     }).id("energizedpower:crafting/advanced_machine_frame")
 
-    event.remove({ output: 'energizedpower:reinforced_advanced_machine_frame' })
-    event.custom(
-      {
-        "type": "industrialforegoing:dissolution_chamber",
-        "input": [
-          {
-            "item": "energizedpower:energized_crystal_matrix"
-          },
-          {
-            "item": "energizedpower:energized_crystal_matrix"
-          },
-          {
-            "item": "energizedpower:energized_crystal_matrix"
-          },
-          {
-            "item": "energizedpower:processing_unit"
-          },
-          {
-            "item": "energizedpower:processing_unit"
-          },
-          {
-            "item": "industrialforegoing:pink_slime_ingot"
-          },
-          {
-            "item": "energizedpower:advanced_machine_frame"
-          },
-          {
-            "item": "industrialforegoing:pink_slime_ingot"
-          },
-        ],
-        "inputFluid": "{Amount:250,FluidName:\"tconstruct:ender_slime\"}",
-        "output": {
-          "count": 1,
-          "item": "energizedpower:reinforced_advanced_machine_frame"
-        },
-        "processingTime": 300
-      })
+    // event.remove({ output: 'energizedpower:reinforced_advanced_machine_frame' })
+    // event.custom(
+    //   {
+    //     "type": "industrialforegoing:dissolution_chamber",
+    //     "input": [
+    //       {
+    //         "item": "energizedpower:energized_crystal_matrix"
+    //       },
+    //       {
+    //         "item": "energizedpower:energized_crystal_matrix"
+    //       },
+    //       {
+    //         "item": "energizedpower:energized_crystal_matrix"
+    //       },
+    //       {
+    //         "item": "energizedpower:processing_unit"
+    //       },
+    //       {
+    //         "item": "energizedpower:processing_unit"
+    //       },
+    //       {
+    //         "item": "industrialforegoing:pink_slime_ingot"
+    //       },
+    //       {
+    //         "item": "energizedpower:advanced_machine_frame"
+    //       },
+    //       {
+    //         "item": "industrialforegoing:pink_slime_ingot"
+    //       },
+    //     ],
+    //     "inputFluid": "{Amount:250,FluidName:\"tconstruct:ender_slime\"}",
+    //     "output": {
+    //       "count": 1,
+    //       "item": "energizedpower:reinforced_advanced_machine_frame"
+    //     },
+    //     "processingTime": 300
+    //   })
 
 
     event.shaped('rftoolsbase:machine_frame', [
