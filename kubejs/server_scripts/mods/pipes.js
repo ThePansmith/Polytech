@@ -3,6 +3,7 @@ if (isExpertMode) {
 
     // Pipes
     event.replaceInput({ id: /pipez:.*_pipe/ }, 'minecraft:iron_ingot', '#forge:plates/steel')
+    event.replaceInput({ id: /cyclic:.*_pipe/ }, '#minecraft:stairs', 'kubejs:reinforced_stone')
     event.replaceInput({ output: 'pipez:item_pipe' }, '#forge:dusts/redstone', 'quark:pipe')
     event.replaceInput({ output: 'pipez:fluid_pipe' }, '#forge:dusts/redstone', 'create:fluid_pipe')
     event.replaceInput({ output: 'pipez:energy_pipe' }, '#forge:dusts/redstone', 'thermal:energy_duct')

@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
     if (isExpertMode) {
         // event.remove({id: 'oritech:centrifuge/carbon'})
         // reconstruct("forge:dusts/coal", "oritech:carbon_fibre_strands", 1500)
-        reconstruct("minecraft:iron_ingot", 'thermal:redstone_servo', 1500)
+        reconstruct("createaddition:iron_rod", 'thermal:redstone_servo', 1500)
         reconstruct("minecraft:gold_ingot", "thermal:rf_coil", 2500)
         reconstructkeeprecipe('minecraft:glowstone_dust', 'ae2:sky_dust', 250)  
         empower('mekanism:elite_control_circuit', 'mekanism:advanced_control_circuit', 'mekanism:alloy_reinforced', 'integrateddynamics:crystalized_menril_chunk', 'mekanism:alloy_reinforced', 'integrateddynamics:crystalized_menril_chunk', 2000, 60, 6522834) 

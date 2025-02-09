@@ -23,7 +23,7 @@
 #Configurations related to material overrides.
 [materialOverrides]
 	#List of materials that should be gems.
-	gem = ["diamond", "emerald", "lapis", "prismarine", "quartz"]
+	gem = ["diamond", "emerald", "lapis", "prismarine", "quartz", "coal"]
 	#List of materials that should be crystals.
 	crystal = []
 	#List of materials that should be dusts.

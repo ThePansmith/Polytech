@@ -60,6 +60,9 @@
     "locomotive": true,
     "switch_track": true
   },
+  "mekanismcovers": {
+    "cover_component": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -170,6 +173,9 @@
   },
   "waystones": {
     "waystone": true
+  },
+  "gravestone": {
+    "grave": true
   },
   "corpse": {
     "corpse": true

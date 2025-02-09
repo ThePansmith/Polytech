@@ -10,5 +10,10 @@ ServerEvents.recipes(event => {
     event.remove({id: /railcraft:.+_gear/ })
     event.remove({id: 'enderio:iron_gear' })
     event.remove({id: 'energizedpower:metal_press/iron_gear' })
+
+    // Removed until I can get a schema up for it
+    event.remove({id: 'energizedpower:crafting/induction_smelter' })
+    event.remove({id: 'energizedpower:crafting/alloy_furnace' })
+    event.remove({id: /energizedpower:alloy_furnace/ })
   }
 })

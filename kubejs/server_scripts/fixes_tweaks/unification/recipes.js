@@ -13,6 +13,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ input: 'thermal:cured_rubber' }, 'thermal:cured_rubber', '#poly:plastics');
     event.replaceInput({ input: 'tfmg:plastic_sheet' }, 'tfmg:plastic_sheet', '#poly:plastics');
     
+    event.replaceInput({ input: 'railcraft:coal_dust' }, 'railcraft:coal_dust', 'mekanism:dust_coal');
 
 
   })

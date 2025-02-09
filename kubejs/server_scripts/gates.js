@@ -269,7 +269,7 @@ ServerEvents.recipes(event => {
       D: 'actuallyadditions:empowered_void_crystal'
     }).id("thermal:machine_frame")
 
-    event.shaped('2x kubejs:reinforced_stone', [
+    event.shaped('3x kubejs:reinforced_stone', [
       'BCB',
       'CSC',
       'BCB'
