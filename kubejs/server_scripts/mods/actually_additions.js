@@ -1,48 +1,48 @@
 ServerEvents.recipes(event => {
 
-    function reconstruct(input, output, rf) {
-        event.custom({
-            "type": "actuallyadditions:laser",
-            "energy": rf,
-            "ingredient": {
-                "item": input
-            },
-            "result": {
-                "item": output
-            }
-        })
-    }
+    // function reconstruct(input, output, rf) {
+    //     event.custom({
+    //         "type": "actuallyadditions:laser",
+    //         "energy": rf,
+    //         "ingredient": {
+    //             "item": input
+    //         },
+    //         "result": {
+    //             "item": output
+    //         }
+    //     })
+    // }
 
 
-    function empower(output, base, input1, input2, input3, input4, rf, time, color) {
-        event.remove({ output: output })
-        event.custom({
-            "type": "actuallyadditions:empowering",
-            "base": {
-              "item": base
-            },
-            "color": color,
-            "energy": rf,
-            "modifiers": [
-              {
-                "item": input1
-              },
-              {
-                "item": input2
-              },
-              {
-                "item": input3
-              },
-              {
-                "item": input4
-              }
-            ],
-            "result": {
-              "item": output
-            },
-            "time": time
-          })
-        }
+    // function empower(output, base, input1, input2, input3, input4, rf, time, color) {
+    //     event.remove({ output: output })
+    //     event.custom({
+    //         "type": "actuallyadditions:empowering",
+    //         "base": {
+    //           "item": base
+    //         },
+    //         "color": color,
+    //         "energy": rf,
+    //         "modifiers": [
+    //           {
+    //             "item": input1
+    //           },
+    //           {
+    //             "item": input2
+    //           },
+    //           {
+    //             "item": input3
+    //           },
+    //           {
+    //             "item": input4
+    //           }
+    //         ],
+    //         "result": {
+    //           "item": output
+    //         },
+    //         "time": time
+    //       })
+    //     }
 
     if (isExpertMode) {
         event.remove({id: 'oritech:centrifuge/carbon'})
