@@ -45,8 +45,8 @@ ServerEvents.recipes(event => {
     //     }
 
     if (isExpertMode) {
-        event.remove({id: 'oritech:centrifuge/carbon'})
-        reconstruct("forge:dusts/coal", "oritech:carbon_fibre_strands", 1500)
+        // event.remove({id: 'oritech:centrifuge/carbon'})
+        // reconstruct("forge:dusts/coal", "oritech:carbon_fibre_strands", 1500)
         event.recipes.actuallyadditions.laser('minecraft:glowstone_dust', 'ae2:sky_dust', 250).id("kubejs:idk1")
         event.recipes.actuallyadditions.empowering('mekanism:elite_control_circuit', 'mekanism:advanced_control_circuit', ['mekanism:alloy_reinforced', 'integrateddynamics:crystalized_menril_chunk', 'mekanism:alloy_reinforced', 'integrateddynamics:crystalized_menril_chunk'], 2000, 60, 6522834).id("kubejs:idk1")
         event.recipes.actuallyadditions.empowering('mekanism:ultimate_control_circuit', 'mekanism:elite_control_circuit', ['mekanism:alloy_atomic', 'cyclic:gem_obsidian', 'mekanism:alloy_atomic', 'cyclic:gem_obsidian'], 20000, 60, 6522834)

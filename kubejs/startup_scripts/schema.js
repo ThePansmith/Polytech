@@ -79,7 +79,6 @@ StartupEvents.recipeSchemaRegistry(event => {
     // Industrial foregoing
     event.register("industrialforegoing:dissolution_chamber", new $RecipeSchema(
         $ItemComponents.OUTPUT.key("output"),
-        $FluidComponents.OUTPUT.key("outputFluid").optional(),
         $ItemComponents.INPUT_ARRAY.key("input"),
         $FluidComponents.INPUT.key("inputFluid"),
         $NumberComponent.INT.key("processingtime").defaultOptional().preferred("processingtime")
