@@ -15,5 +15,7 @@ ServerEvents.recipes(event => {
     event.remove({id: 'energizedpower:crafting/induction_smelter' })
     event.remove({id: 'energizedpower:crafting/alloy_furnace' })
     event.remove({id: /energizedpower:alloy_furnace/ })
+
+    event.remove({output: "cyclic:compressed_cobblestone" })
   }
 })
