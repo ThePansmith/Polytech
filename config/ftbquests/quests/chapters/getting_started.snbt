@@ -64,33 +64,38 @@
 			dependencies: ["680970036AAE8E23"]
 			description: ["You got options, see?"]
 			id: "6F5FBFD9FAECDE74"
-			tasks: [
-				{
-					id: "6145E305C4B1A54B"
-					item: "create:blaze_burner"
-					type: "item"
+			tasks: [{
+				id: "740F3C9A50637E26"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "create:blaze_burner"
+							}
+							{
+								Count: 1b
+								id: "railcraft:blast_furnace_bricks"
+							}
+							{
+								Count: 1b
+								id: "aether:altar"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:enchanting_apparatus"
+							}
+							{
+								Count: 1b
+								id: "botania:alchemy_catalyst"
+							}
+						]
+					}
 				}
-				{
-					id: "170B931D7908F3A3"
-					item: "railcraft:blast_furnace_bricks"
-					type: "item"
-				}
-				{
-					id: "2F09E950E457491E"
-					item: "aether:altar"
-					type: "item"
-				}
-				{
-					id: "63DEC4DCABE2E69A"
-					item: "botania:mana_pool"
-					type: "item"
-				}
-				{
-					id: "7BE731F4E233786E"
-					item: "ars_nouveau:alteration_table"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: 1.0d
 			y: -0.5d
 		}
