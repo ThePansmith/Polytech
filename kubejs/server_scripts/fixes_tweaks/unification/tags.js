@@ -43,6 +43,9 @@ ServerEvents.tags('item', event => {
     event.add('forge:heads', 'enderio:enderman_head')
     event.add('forge:coal_coke', 'tfmg:coal_coke')
     event.add("forge:sawdust", "#forge:dusts/wood")
+
+    event.add('forge:gems/coal', 'minecraft:coal')
+    event.add('forge:ingots/coal', 'minecraft:coal')
 })
 
 
