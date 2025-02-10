@@ -12,12 +12,13 @@ ServerEvents.recipes(event => {
         // Alt recipe for skystone dust
         event.recipes.actuallyadditions.laser('ae2:sky_dust', 'minecraft:glowstone_dust', 250).id("kubejs:skydust")
 
+        event.replaceInput({ output: 'ae2:charger' }, '#forge:ingots/steel', 'megacells:sky_steel_ingot') 
         event.shaped('ae2:inscriber', [
             'SPS',
             'SFA',
             'SPS'
         ], {
-            S: '#forge:ingots/dark_steel',
+            S: 'megacells:sky_steel_ingot',
             P: 'minecraft:sticky_piston',
             F: 'industrialforegoing:machine_frame_simple',
             A: '#forge:ingots/bronze'
