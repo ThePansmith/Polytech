@@ -85,22 +85,28 @@ StartupEvents.recipeSchemaRegistry(event => {
     //     $NumberComponent.INT.key("processingtime").defaultOptional().preferred("processingtime")
     // )
     // );
-    // // Actually Additions
-    // event.register("actuallyadditions:laser", new $RecipeSchema(
-    //     $ItemComponents.OUTPUT.key("result"),
-    //     $ItemComponents.INPUT.key("ingredient"),
-    //     $NumberComponent.INT.key("energy").defaultOptional().preferred("energy")
-    // )
-    // );
+    // Actually Additions
+    event.register("actuallyadditions:laser", new $RecipeSchema(
+        $ItemComponents.OUTPUT.key("result"),
+        $ItemComponents.INPUT.key("ingredient"),
+        $NumberComponent.INT.key("energy").defaultOptional().preferred("energy")
+    )
+    );
 
-    // event.register("actuallyadditions:empowering", new $RecipeSchema(
-    //     $ItemComponents.OUTPUT.key("result"),
-    //     $ItemComponents.INPUT.key("base"),
-    //     $ItemComponents.INPUT_ARRAY.key("modifiers"),
-    //     $NumberComponent.INT.key("energy").defaultOptional().preferred("energy"),
-    //     $NumberComponent.INT.key("color").defaultOptional().preferred("color"),
-    //     $NumberComponent.INT.key("time").defaultOptional().preferred("time")
-    // )
-    // );
-
+    event.register("actuallyadditions:empowering", new $RecipeSchema(
+        $ItemComponents.OUTPUT.key("result"),
+        $ItemComponents.INPUT.key("base"),
+        $ItemComponents.INPUT_ARRAY.key("modifiers"),
+        $NumberComponent.INT.key("energy").defaultOptional().preferred("energy"),
+        $NumberComponent.INT.key("color").defaultOptional().preferred("color"),
+        $NumberComponent.INT.key("time").defaultOptional().preferred("time")
+    )
+    );
+    // Powah
+    event.register("powah:energizing", new $RecipeSchema(
+        $ItemComponents.OUTPUT.key("result"),
+        $ItemComponents.INPUT_ARRAY.key("ingredients"),
+        $NumberComponent.INT.key("energy").defaultOptional().preferred("energy")
+    )
+    );
 });
