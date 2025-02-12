@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    const wiremat = [ 'copper', 'tin', 'gold']
+    const wiremat = [ 'copper', 'gold']
     wiremat.forEach(wiremat => {
         event.custom({
         "type": "railcraft:rolling",

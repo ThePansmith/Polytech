@@ -2,14 +2,14 @@ if (Platform.isLoaded('enderio')) {
 ServerEvents.recipes(event => {
   if (isExpertMode) {
     event.recipes.actuallyadditions.laser('enderio:grains_of_infinity', 'create:powdered_obsidian', 250).id("kubejs:obbytransform")
-    event.shaped('2x enderio:void_chassis', [
+    event.shaped('3x enderio:void_chassis', [
       'IEI',
       'CRC',
       'IEI'
     ], {
       C: '#poly:advanced_caps',
       I: 'enderio:grains_of_infinity',
-      R: 'actuallyadditions:iron_casing',
+      R: 'actuallyadditions:ender_casing',
       E: 'powah:ender_core'
     }).id('enderio:void_chassis')
 

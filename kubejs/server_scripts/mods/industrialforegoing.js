@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
             "item": "energizedpower:advanced_alloy_ingot"
           },
         ],
-        "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:latex\"}",
+        "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:pink_slime\"}",
         "output": {
           "count": 1,
           "item": "industrialforegoing:machine_frame_advanced"
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
             "item": "energizedpower:energized_crystal_matrix"
           },
         ],
-        "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:latex\"}",
+        "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:ether_gas\"}",
         "output": {
           "count": 1,
           "item": "industrialforegoing:machine_frame_supreme"

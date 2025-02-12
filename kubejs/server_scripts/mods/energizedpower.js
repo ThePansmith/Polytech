@@ -71,4 +71,13 @@ ServerEvents.recipes(event => {
         },
         "processingTime": 300
       })
+
+      event.recipes.create.sequenced_assembly([
+        Item.of('energizedpower:reinforced_advanced_machine_frame'),
+      ], 'energizedpower:advanced_machine_frame', [
+        event.recipes.createDeploying('kubejs:incomplete_reinforced_advanced_machine_frame', ['kubejs:incomplete_reinforced_advanced_machine_frame', 'energizedpower:energized_crystal_matrix']),
+        event.recipes.createDeploying('kubejs:incomplete_reinforced_advanced_machine_frame', ['kubejs:incomplete_reinforced_advanced_machine_frame', 'energizedpower:processing_unit']),
+        event.recipes.createDeploying('kubejs:incomplete_reinforced_advanced_machine_frame', ['kubejs:incomplete_reinforced_advanced_machine_frame', 'industrialforegoing:pink_slime_ingot']),
+        event.recipes.createPressing('kubejs:incomplete_reinforced_advanced_machine_frame', 'kubejs:incomplete_reinforced_advanced_machine_frame'),
+      ]).transitionalItem('kubejs:incomplete_reinforced_advanced_machine_frame').loops(2)
     }})
