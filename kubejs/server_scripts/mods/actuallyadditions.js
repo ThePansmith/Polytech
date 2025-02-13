@@ -11,6 +11,9 @@ if (Platform.isLoaded('actuallyadditions')) {
             C: '#poly:basic_caps',
             S: '#poly:aa_casing_prereq'
           }).id("actuallyadditions:iron_casing")
+
+          event.replaceInput({ id: 'actuallyadditions:ender_casing' }, 'actuallyadditions:black_quartz_block', 'actuallyadditions:iron_casing')          
       }
     })
+
     }
