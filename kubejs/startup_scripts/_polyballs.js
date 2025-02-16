@@ -1,8 +1,8 @@
-// Basic polyballs
+//priority: 998
+// Polyballs
 // The scripts that utlitze these check to see if the applicable mods are loaded before doing anything, so removing entries is not required.
-// A json file is used as it is easiest way to have "cross-folder" data (in this case, to create both items and recipes from the same info), same as with the packmode
 
-let basicpolyball = [
+global.basicpolyball = [
     ['minecraft:iron', '#d5d5d5'],
     ['minecraft:copper', '#e47b55'],
     ['minecraft:gold', '#faf25e'],
@@ -19,7 +19,6 @@ let basicpolyball = [
     ['create:brass', '#e4bb6d'],
     ['energizedpower:tin', '#c0c0c0'],
     ['energizedpower:steel', '#444444'],
-    ['energizedpower:redstone_alloy', '#ff7b7b'],
     ['energizedpower:advanced_alloy', '#ff3e00'],
     ['energizedpower:energized_copper', '#db8534'],
     ['energizedpower:energized_gold', '#ffac33'],
@@ -39,7 +38,6 @@ let basicpolyball = [
     ['ad_astra:ostrum', '#6c4e3b'],
     ['ad_astra:calorite', '#f05452'],
     ['extendedcrafting:black_iron', '#333333'],
-    ['extendedcrafting:redstone', '#f13c3c'],
     ['extendedcrafting:enhanced_redstone', '#ea1e1e'],
     ['extendedcrafting:ender', '#5f2f3e'],
     ['extendedcrafting:enhanced_ender', '#3f2c3f'],
@@ -72,5 +70,28 @@ let basicpolyball = [
     ['createaddition:electrum', '#f8c600']
 ];
 
-// Use JsonIO to write the basicpolyball array to a file
-JsonIO.write('kubejs/config/basicpolyball.json', basicpolyball);
+global.modpolyball = [
+    ['minecraft', 'basic', '#d5d5d5'],
+    ['mekanism', 'tech', '#7f5f5f'],
+    ['create', 'tech', '#909c92'],
+    ['energizedpower', 'tech', '#ff7b7b'],
+    ['industrialforegoing', 'tech', '#ff3e00'],
+    ['thermal', 'tech', '#db8534'],
+    ['ad_astra', 'space', '#946c4c'],
+    ['extendedcrafting', 'endgame', '#333333'],
+    ['thermalendergy', 'endgame', '#f13c3c'],
+    ['tfmg', 'tech', '#5e5e5e'],
+    ['tconstruct', 'tinkers', '#3f4f5f'],
+    ['enderio', 'tech', '#4c2265'],
+    ['powah', 'energy', '#6e6e6e'],
+    ['createaddition', 'energy', '#f8c600']
+];
+
+global.superpolyball = [
+    ['basic', '#d5d5d5'],
+    ['tech', '#7f5f5f'],
+    ['space', '#946c4c'],
+    ['endgame', '#333333'],
+    ['tinkers', '#3f4f5f'],
+    ['energy', '#6e6e6e']
+];
