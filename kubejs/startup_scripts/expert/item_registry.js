@@ -25,10 +25,10 @@ StartupEvents.registry('item', event => {
         }
     })
 
-    global.modpolyball.forEach(([mod, superclass, color]) => {
-        if (Platform.isLoaded(mod)) {
+    global.modpolyball.forEach(([mod, superclass, color, customGroup]) => {
+        if (customGroup || Platform.isLoaded(mod)) {
             event.create(`${mod}_polyball`)
-                .textureJson({ layer0: 'kubejs:item/polyball' })
+            .textureJson({ layer0: 'kubejs:item/polyball', layer1: 'kubejs:item/polyball_overlay' })
                 .color(0, color)
                 .glow(true)
                 .tag(`poly:polyball/${superclass}`)
@@ -38,7 +38,7 @@ StartupEvents.registry('item', event => {
 
     global.superpolyball.forEach(([superclass, color]) => {
         event.create(`${superclass}_polyball`)
-            .textureJson({ layer0: 'kubejs:item/polyball' })
+        .textureJson({ layer0: 'kubejs:item/polyball', layer1: 'kubejs:item/polyball_overlay' })
             .color(0, color)
             .glow(true)
             .rarity('epic')
