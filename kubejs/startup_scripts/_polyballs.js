@@ -76,7 +76,7 @@ global.basicpolyball = [
     ['thermal:niter', '#ffffff'],
     ['thermal:ruby', '#ff0000'],
     ['thermal:sapphire', '#0000ff'],
-    ['thermal:signalum', '#f3b200'],
+    ['thermal:signalum_ingot', '#f3b200'],
     ['thermal:sulfur', '#ffff00'],
     ['thermal:xp_crystal', '#00ff00'],
     ['thermalendergy:melodium_ingot', '#ff6b6b'],
