@@ -26,6 +26,19 @@ ServerEvents.recipes(event => {
       A: 'industrialforegoing:machine_frame_simple'
     }).id('mekanism:metallurgic_infuser')
 
+    event.shaped('6x mekanismgenerators:fission_reactor_casing', [
+      'SAS',
+      'AOA',
+      'SAS'
+    ], {
+      S: 'mekanism:hdpe_sheet',
+      O: '#poly:polyball/tech',
+      A: 'mekanism:steel_casing'
+    }).id('mekanism:metallurgic_infuser').id("mekanismgenerators:fission_reactor/casing")
+
+    event.replaceInput({ id: 'mekanismgenerators:reactor/frame' }, 'mekanism:steel_casing', 'kubejs:mekanism_polyball')
+
+
     // event.shaped('2x mekanism:steel_casing', [
     //   'IEI',
     //   'CRD',
@@ -77,9 +90,9 @@ ServerEvents.recipes(event => {
         "processingTime": 400
       })
 
-    event.remove({ id: 'mekanism:elite_control_circuit' })
+    event.remove({ output: 'mekanism:elite_control_circuit' })
     event.recipes.actuallyadditions.empowering('mekanism:elite_control_circuit', '#poly:advanced_circuit', ['mekanism:alloy_reinforced', 'integrateddynamics:crystalized_menril_chunk', 'mekanism:alloy_reinforced', 'integrateddynamics:crystalized_menril_chunk'], 2000, 60, 6522834)
-    event.remove({ id: 'mekanism:ultimate_control_circuit' })
+    event.remove({ output: 'mekanism:ultimate_control_circuit' })
     event.recipes.actuallyadditions.empowering('mekanism:ultimate_control_circuit', 'mekanism:elite_control_circuit', ['mekanism:alloy_atomic', 'cyclic:gem_obsidian', 'mekanism:alloy_atomic', 'cyclic:gem_obsidian'], 20000, 60, 6522834)
 
   }
