@@ -133,16 +133,6 @@
 			y: 0.0d
 		}
 		{
-			id: "17F168A01D533403"
-			tasks: [{
-				id: "132675A16E99B960"
-				item: "mekanismgenerators:fusion_reactor_controller"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 6.0d
-		}
-		{
 			id: "53AE243DD9361D43"
 			tasks: [{
 				id: "771CD6D9CF835417"
@@ -151,12 +141,6 @@
 			}]
 			x: -2.0d
 			y: 0.0d
-		}
-		{
-			id: "56738E386CDE51BB"
-			size: 1.25d
-			x: -1.0d
-			y: 8.5d
 		}
 		{
 			id: "666926FD2DAB92D2"
@@ -217,8 +201,8 @@
 				item: "thermalendergy:endergy_upgrade_3"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 6.0d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			id: "7B539847C09398AC"
@@ -238,7 +222,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			id: "266BBE444C86564A"
@@ -292,25 +276,14 @@
 		}
 		{
 			id: "03050A4D8CEED2FE"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
-				id: "3BD5F8FE41B64F06"
-				item: "extendedcrafting:epic_auto_table"
+				id: "4F4AA929F6ADDE19"
+				item: "extendedcrafting:compressor"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 8.5d
-		}
-		{
-			id: "4464D3463D4DD612"
-			size: 1.5d
-			tasks: [{
-				id: "3C4B7E2DDBD2B91F"
-				item: "extendedcrafting:the_ultimate_ingot"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 8.5d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			id: "7CCEED7CE12EA9E4"
@@ -319,7 +292,7 @@
 				item: "minecraft:grass_block"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: -2.0d
 		}
 		{
@@ -427,6 +400,74 @@
 			}]
 			x: 8.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"03050A4D8CEED2FE"
+				"47F19945E5F4CD40"
+			]
+			id: "4758F8D6F5BDEF2D"
+			size: 1.5d
+			tasks: [{
+				id: "771BBC4109BDAF91"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "poly:polyball/tech"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			id: "47F19945E5F4CD40"
+			tasks: [{
+				id: "669A3DDCFA3BFF55"
+				item: "extendedcrafting:crafting_core"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "69A9CD3851E703A2"
+			tasks: [{
+				id: "68E78BFD09508222"
+				item: "ftbquests:barrier"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			id: "6045E628A35F558F"
+			tasks: [{
+				id: "1095087640D69B36"
+				item: "ae2:creative_item_cell"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			id: "1A1D2438AB70AC2B"
+			tasks: [
+				{
+					id: "1D70DB086A2E4F4F"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					id: "7902F05984C5FF15"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 8.0d
 		}
 	]
 	title: "Overview"
