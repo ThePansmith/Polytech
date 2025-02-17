@@ -77,9 +77,9 @@ ServerEvents.recipes(event => {
         "processingTime": 400
       })
 
-    event.remove({ id: 'mekanism:elite_control_circuit' })
+    event.remove({ output: 'mekanism:elite_control_circuit' })
     event.recipes.actuallyadditions.empowering('mekanism:elite_control_circuit', '#poly:advanced_circuit', ['mekanism:alloy_reinforced', 'integrateddynamics:crystalized_menril_chunk', 'mekanism:alloy_reinforced', 'integrateddynamics:crystalized_menril_chunk'], 2000, 60, 6522834)
-    event.remove({ id: 'mekanism:ultimate_control_circuit' })
+    event.remove({ output: 'mekanism:ultimate_control_circuit' })
     event.recipes.actuallyadditions.empowering('mekanism:ultimate_control_circuit', 'mekanism:elite_control_circuit', ['mekanism:alloy_atomic', 'cyclic:gem_obsidian', 'mekanism:alloy_atomic', 'cyclic:gem_obsidian'], 20000, 60, 6522834)
 
   }
