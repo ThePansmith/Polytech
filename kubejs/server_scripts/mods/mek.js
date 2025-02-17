@@ -26,6 +26,16 @@ ServerEvents.recipes(event => {
       A: 'industrialforegoing:machine_frame_simple'
     }).id('mekanism:metallurgic_infuser')
 
+    event.shaped('6x mekanismgenerators:fission_reactor_casing', [
+      'SAS',
+      'AOA',
+      'SAS'
+    ], {
+      S: 'mekanism:hdpe_sheet',
+      O: '#poly:polyball/tech',
+      A: 'mekanism:steel_casing'
+    }).id('mekanism:metallurgic_infuser').id("mekanismgenerators:fission_reactor/casing")
+
     // event.shaped('2x mekanism:steel_casing', [
     //   'IEI',
     //   'CRD',
