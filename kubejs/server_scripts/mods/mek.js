@@ -36,6 +36,9 @@ ServerEvents.recipes(event => {
       A: 'mekanism:steel_casing'
     }).id('mekanism:metallurgic_infuser').id("mekanismgenerators:fission_reactor/casing")
 
+    event.replaceInput({ id: 'mekanismgenerators:reactor/frame' }, 'mekanism:steel_casing', 'kubejs:mekanism_polyball')
+
+
     // event.shaped('2x mekanism:steel_casing', [
     //   'IEI',
     //   'CRD',

@@ -15,6 +15,9 @@ JEIEvents.hideItems(event => {
     // AE2
     event.hide(/ae2:facade/)
 
+    // Mekanism
+    event.hide(/mekanism:creative_fluid_tank/)
+    event.hide(/mekanism:creative_chemical_tank/)
     // Rftools
     event.hide(/rftoolsutility:syringe/)
 })
@@ -28,8 +31,11 @@ JEIEvents.addItems(event => {
     event.add('enderio:reinforced_obsidian_block')
     event.add(Item.of('enderio:filled_soul_vial', '{BlockEntityTag:{EntityStorage:{Entity:{id:"minecraft:zombie"}}}}'))
 
+    // Mekanism
+    event.add('mekanism:creative_fluid_tank')
+    event.add('mekanism:creative_chemical_tank')
+
     // Rftools
     event.add('rftoolsutility:syringe')
-
 })
 

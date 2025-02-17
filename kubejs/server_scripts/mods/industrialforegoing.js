@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
   if (isExpertMode) {
-    event.replaceInput({ id: 'industrialforegoingsouls:soul_laser_base' }, 'industrialforegoing:machine_frame_advanced', 'industrialforegoing:machine_frame_advanced')
+    event.replaceInput({ id: 'industrialforegoingsouls:soul_laser_base' }, 'industrialforegoing:machine_frame_advanced', 'industrialforegoing:machine_frame_supreme')
+    event.replaceInput({ id: 'industrialforegoingsouls:soul_laser_base' },'minecraft:sculk_catalyst', 'kubejs:industrialforegoing_polyball')
 
     event.shaped('2x industrialforegoing:machine_frame_pity', [
       'WSW',

@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
             if (amount === undefined) { amount = 256 }
             let [mod, material] = id.split(':');
             if (Platform.isLoaded(mod)) {
-                event.recipes.extendedcrafting.compressor(`kubejs:${material}_polyball`, 'minecraft:diamond', id, amount, 5000000, 5000000).id(`kubejs:compressor/${material}_polyball`);
+                event.recipes.extendedcrafting.compressor(`kubejs:${material}_polyball`, 'extendedcrafting:ultimate_catalyst', id, amount, 5000000, 5000000).id(`kubejs:compressor/${material}_polyball`);
             }
         });
 
@@ -19,12 +19,12 @@ ServerEvents.recipes(event => {
             }
         });
 
-        global.superpolyball.forEach(([superclass]) => {
+        global.superpolyball.forEach(([superclass,,core]) => {
             let inputs = global.modpolyball
                 .filter(([mod, sc,,, customGroup ]) => sc === superclass && (customGroup === true || Platform.isLoaded(mod)))
                 .map(([mod]) => `kubejs:${mod}_polyball`);
             if (inputs.length > 0) {
-                event.recipes.extendedcrafting.combination(`kubejs:${superclass}_polyball`, 'minecraft:dragon_egg', inputs, 5000000, 1000000);
+                event.recipes.extendedcrafting.combination(`kubejs:${superclass}_polyball`, core, inputs, 5000000, 1000000);
             }
         });
     }
