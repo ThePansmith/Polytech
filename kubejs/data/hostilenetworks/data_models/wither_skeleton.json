@@ -30,6 +30,7 @@
             "count": 32
         },
         {
+            "optional": true,
             "item": "thermal:lead_ore",
             "count": 5
         },

@@ -13,6 +13,14 @@ ServerEvents.recipes(event => {
             P: 'kubejs:storage_polyball',
             C: '#forge:chests'
         })
+        event.shaped('sophisticatedstorage:stack_upgrade_omega_tier', [
+            'NNN',
+            'PPP',
+            'NNN'
+        ], {
+            N: 'sophisticatedstorage:stack_upgrade_tier_5',
+            P: 'kubejs:storage_polyball',
+        })
 
         event.recipes.extendedcrafting.shaped_table("mekanism:creative_energy_cube", [
             'AABAA',

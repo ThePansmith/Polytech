@@ -27,6 +27,7 @@
             "count": 24
         },
         {
+            "optional": true,
             "item": "energizedpower:tin_ore",
             "count": 6
         },

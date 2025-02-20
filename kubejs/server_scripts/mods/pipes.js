@@ -9,7 +9,7 @@ if (isExpertMode) {
     event.replaceInput({ output: 'integrateddynamics:cable' }, '#forge:dusts/redstone', 'pipez:universal_pipe')
 
     event.replaceInput({ id: /laserio/ }, 'minecraft:iron_ingot', '#forge:plates/steel')
-    event.replaceInput({ output: 'prettypipes:pipe' }, 'minecraft:copper_ingot', '#forge:ingots/steel')
+    // event.replaceInput({ output: 'prettypipes:pipe' }, 'minecraft:copper_ingot', '#forge:ingots/steel')
     
     event.recipes.powah.energizing('2x powah:steel_energized', ['#forge:ingots/steel', 'minecraft:gold_ingot'], 2500).id("powah:energizing/energized_steel")
 

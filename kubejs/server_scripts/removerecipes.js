@@ -16,6 +16,9 @@ ServerEvents.recipes(event => {
     event.remove({id: 'energizedpower:crafting/alloy_furnace' })
     event.remove({id: /energizedpower:alloy_furnace/ })
 
+    // Duplicates/reduntant
     event.remove({output: "cyclic:compressed_cobblestone" })
+    event.remove({output: 'megacells:mega_interface' })
+    event.remove({output: 'megacells:mega_pattern_provider' })
   }
 })

@@ -52,6 +52,47 @@ ServerEvents.recipes(event => {
     //   D: 'energizedpower:advanced_machine_frame'
     // }).id('mekanism:steel_casing')
 
+    if (Platform.isLoaded('tfmg')) {
+      event.remove({ output: 'mekanism:steel_casing' })
+      event.custom(
+        {
+          "type": "industrialforegoing:dissolution_chamber",
+          "input": [
+            {
+              "item": "enderio:dark_steel_ingot"
+            },
+            {
+              "tag": "poly:mek_casing_prereq"
+            },
+            {
+              "item": "enderio:dark_steel_ingot"
+            },
+            {
+              "item": "mekanism:block_osmium"
+            },
+            {
+              "item": "mekanism:block_osmium"
+            },
+            {
+              "tag": "poly:advanced_circuit"
+            },
+            {
+              "item": "energizedpower:advanced_machine_frame"
+            },
+            {
+              "tag": "poly:advanced_circuit"
+            },
+          ],
+          "inputFluid": "{Amount:1000,FluidName:\"tfmg:molten_steel\"}",
+          "output": {
+            "count": 2,
+            "item": "mekanism:steel_casing"
+          },
+          "processingTime": 400
+        })
+      }
+
+    if (Platform.isLoaded('tconstruct')) {
     event.remove({ output: 'mekanism:steel_casing' })
     event.custom(
       {
@@ -82,13 +123,51 @@ ServerEvents.recipes(event => {
             "tag": "poly:advanced_circuit"
           },
         ],
-        "inputFluid": "{Amount:1000,FluidName:\"tfmg:liquid_concrete\"}",
+        "inputFluid": "{Amount:1000,FluidName:\"tconstruct:molten_steel\"}",
         "output": {
           "count": 2,
           "item": "mekanism:steel_casing"
         },
         "processingTime": 400
       })
+    } else {
+      event.custom(
+        {
+          "type": "industrialforegoing:dissolution_chamber",
+          "input": [
+            {
+              "item": "enderio:dark_steel_ingot"
+            },
+            {
+              "tag": "poly:mek_casing_prereq"
+            },
+            {
+              "item": "enderio:dark_steel_ingot"
+            },
+            {
+              "item": "mekanism:block_osmium"
+            },
+            {
+              "item": "mekanism:block_osmium"
+            },
+            {
+              "tag": "poly:advanced_circuit"
+            },
+            {
+              "item": "energizedpower:advanced_machine_frame"
+            },
+            {
+              "tag": "poly:advanced_circuit"
+            },
+          ],
+          "inputFluid": "{Amount:1000,FluidName:\"industrialforegoing:latex\"}",
+          "output": {
+            "count": 2,
+            "item": "mekanism:steel_casing"
+          },
+          "processingTime": 400
+        })
+      }
 
     event.remove({ output: 'mekanism:elite_control_circuit' })
     event.recipes.actuallyadditions.empowering('mekanism:elite_control_circuit', '#poly:advanced_circuit', ['mekanism:alloy_reinforced', 'integrateddynamics:crystalized_menril_chunk', 'mekanism:alloy_reinforced', 'integrateddynamics:crystalized_menril_chunk'], 2000, 60, 6522834)

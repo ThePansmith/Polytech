@@ -67,7 +67,7 @@
 	leafGeneratorCooldown = 5
 	#The Leaf Generator's Energy Production in CF/Leaf
 	#Range: > 1
-	leafGeneratorCPPerLeaf = 300
+	leafGeneratorCPPerLeaf = 1000
 	#The size of the Leaf Generator's harvesting area.  Default is 7x7x7, must be an odd number.
 	#Range: > 1
 	leafGeneratorArea = 7

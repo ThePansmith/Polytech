@@ -1,4 +1,4 @@
-if (Platform.isLoaded('oritech')) {
+if (Platform.isLoaded('hostilenetworks')) {
     ServerEvents.recipes(event => {
         if (isExpertMode) {
             event.replaceInput({ id: /hostile/ }, '#forge:obsidian', 'kubejs:predictive_casing')
@@ -9,7 +9,7 @@ if (Platform.isLoaded('oritech')) {
             ], {
                 B: 'actuallyadditions:empowered_void_crystal',
                 G: '#poly:plastics',
-                C: '#poly:basic_circuit',
+                C: '#poly:advanced_circuit',
                 S: 'industrialforegoing:machine_frame_advanced',
             })
 
@@ -41,7 +41,7 @@ if (Platform.isLoaded('oritech')) {
                     'ZZP'
                 ], {
                     Z: '#forge:plates/zinc',
-                    forge: 'oritech:super_ai_chip',
+                    C: 'oritech:super_ai_chip',
                     P: '#poly:plastics'
                 }).id('kubejs:framework_alt')
             }
