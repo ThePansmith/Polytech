@@ -2,7 +2,7 @@ if (Platform.isLoaded('extendedcrafting')) {
   ServerEvents.recipes(event => {
     if (isExpertMode) {
       event.remove({ id: 'extendedcrafting:frame' })
-      if (Platform.isLoaded('tfmg')) {
+      if (Platform.isLoaded('tconstruct')) {
       event.custom(
         {
           "type": "industrialforegoing:dissolution_chamber",
@@ -11,7 +11,7 @@ if (Platform.isLoaded('extendedcrafting')) {
               "tag": 'forge:plates/netherite'
             },
             {
-              "tag": "poly:adastra_casing_prereq"
+              "item": "mekanism:ultimate_control_circuit"
             },
             {
               "tag": 'forge:plates/netherite'
@@ -26,7 +26,7 @@ if (Platform.isLoaded('extendedcrafting')) {
               "tag": "poly:adastra_casing_prereq"
             },
             {
-              "tag": '#forge:gears/netherite'
+              "tag": 'forge:gears/netherite'
             },
             {
               "tag": "poly:adastra_casing_prereq"
@@ -48,7 +48,7 @@ if (Platform.isLoaded('extendedcrafting')) {
               "tag": 'forge:plates/netherite'
             },
             {
-              "tag": "poly:adastra_casing_prereq"
+              "item": "mekanism:ultimate_control_circuit"
             },
             {
               "tag": 'forge:plates/netherite'
@@ -63,7 +63,7 @@ if (Platform.isLoaded('extendedcrafting')) {
               "tag": "poly:adastra_casing_prereq"
             },
             {
-              "tag": '#forge:gears/netherite'
+              "tag": 'forge:gears/netherite'
             },
             {
               "tag": "poly:adastra_casing_prereq"

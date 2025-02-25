@@ -20,41 +20,135 @@ ServerEvents.recipes(event => {
         ], {
             N: 'sophisticatedstorage:stack_upgrade_tier_5',
             P: 'kubejs:storage_polyball',
-        })
+        }).id('sophisticatedstorage:stack_upgrade_omega_tier')
+
+        // Temp? Might rework these
+
+        // event.recipes.extendedcrafting.shaped_table("mekanism:creative_energy_cube", [
+        //     'AABAA',
+        //     'ACDCA',
+        //     'BEFEB',
+        //     'GCDCG',
+        //     'GGBGG'
+        // ], {
+        //     A: 'kubejs:energy_polyball',
+        //     B: 'kubejs:ultimate_control_circuit_polyball',
+        //     C: 'extendedcrafting:black_iron_ingot',
+        //     D: 'megacells:mega_energy_cell',
+        //     E: 'mekanismgenerators:fission_fuel_assembly',
+        //     F: 'mekanismgenerators:fusion_reactor_controller',
+        //     G: 'kubejs:tech_polyball'
+        // }).id('kubejs:extended/creative_energy_cube')
 
         event.recipes.extendedcrafting.shaped_table("mekanism:creative_energy_cube", [
-            'AABAA',
-            'ACDCA',
-            'BEFEB',
-            'GCDCG',
-            'GGBGG'
+            "AAAAAAAAA",
+            "ABBBBBBBA",
+            "ABCDEDCBA",
+            "FGDHHHDGF",
+            "IGJHKHJGI",
+            "FGDHHHDGF",
+            "FBCDEDCBF",
+            "FBBBBBBBF",
+            "FFFFFFFFF"
         ], {
             A: 'kubejs:energy_polyball',
-            B: 'kubejs:ultimate_control_circuit_polyball',
-            C: 'extendedcrafting:black_iron_ingot',
+            B: 'extendedcrafting:black_iron_ingot',
+            C: 'mekanismgenerators:fission_fuel_assembly',
             D: 'megacells:mega_energy_cell',
-            E: 'mekanismgenerators:fission_fuel_assembly',
-            F: 'mekanismgenerators:fusion_reactor_controller',
-            G: 'kubejs:tech_polyball'
-        }).id('kubejs:extended/creative_energy_cube')
+            E: 'kubejs:ultimate_control_circuit_polyball',
+            F: 'kubejs:tech_polyball',
+            G: 'mekanismgenerators:fission_reactor_casing',
+            H: 'mekanismgenerators:fusion_reactor_frame',
+            I: 'kubejs:mekanism_polyball',
+            J: 'mekanismgenerators:fusion_reactor_controller',
+            K: 'kubejs:advancedmekanism_polyball'
+        }).id('kubejs:extended/creative_energy_cube_2')
 
-        event.recipes.extendedcrafting.shaped_table("create:handheld_worldshaper", [
+        event.recipes.extendedcrafting.shaped_table("mekanism:creative_fluid_tank", [
             "AAABBBAAA",
-            "AACCBCCAA",
-            "ACDDCDDCA",
-            "BCDEEEDCB",
-            "BBCEEECBB",
-            "BCDEEEDCB",
-            "ACDDCDDCA",
-            "AACCBCCAA",
+            "ACCCCCCCA",
+            "ACDEFEDCA",
+            "BCEGHGECB",
+            "BCFHIHFCB",
+            "BCEGHGECB",
+            "ACDEFEDCA",
+            "ACCCCCCCA",
             "AAABBBAAA"
         ], {
-            A: 'kubejs:storage_polyball',
-            B: 'kubejs:material_polyball',
-            C: 'kubejs:tech_polyball',
-            D: 'kubejs:energy_polyball',
-            E: 'kubejs:extreme_polyball'
-        }).id('kubejs:extended/handheld_worldshaper')
+            A: 'kubejs:material_polyball',
+            B: 'kubejs:tech_polyball',
+            C: 'kubejs:storage_polyball',
+            D: 'mekanism:steel_casing',
+            E: 'mekanism:steel_casing',
+            F: 'kubejs:ultimate_control_circuit_polyball',
+            G: 'functionalstorage:max_storage_upgrade',
+            H: 'sophisticatedstorage:stack_upgrade_omega_tier',
+            I: 'mekanism:ultimate_fluid_tank'
+        }).id('kubejs:extended/creative_fluid_tank')
+
+        event.recipes.extendedcrafting.shaped_table("mekanism:creative_chemical_tank", [
+            "AAABBBAAA",
+            "ACCCCCCCA",
+            "ACDEFEDCA",
+            "BCEGHGECB",
+            "BCFHIHFCB",
+            "BCEGHGECB",
+            "ACDEFEDCA",
+            "ACCCCCCCA",
+            "AAABBBAAA"
+        ], {
+            A: 'kubejs:material_polyball',
+            B: 'kubejs:tech_polyball',
+            C: 'kubejs:storage_polyball',
+            D: 'mekanism:steel_casing',
+            E: 'mekanism:steel_casing',
+            F: 'kubejs:ultimate_control_circuit_polyball',
+            G: 'functionalstorage:max_storage_upgrade',
+            H: 'sophisticatedstorage:stack_upgrade_omega_tier',
+            I: 'mekanism:ultimate_chemical_tank'
+        }).id('kubejs:extended/creative_chemical_tank')
+
+        event.recipes.extendedcrafting.shaped_table("mekanism:creative_bin", [
+            "AAABBBAAA",
+            "ACDDEDDCA",
+            "ADFGHGFDA",
+            "BDGIIIGDB",
+            "BEJIKIJEB",
+            "BDGIIIGDB",
+            "ADFGHGFDA",
+            "ACDDEDDCA",
+            "AAABBBAAA"
+        ], {
+            A: 'kubejs:tech_polyball',
+            B: 'kubejs:energy_polyball',
+            C: 'industrialforegoing:supreme_black_hole_tank',
+            D: 'kubejs:material_polyball',
+            E: 'megacells:cell_component_256m',
+            F: 'mekanism:creative_energy_cube',
+            G: 'kubejs:storage_polyball',
+            H: 'mekanism:creative_fluid_tank',
+            I: 'kubejs:extreme_polyball',
+            J: 'mekanism:creative_chemical_tank',
+            K: 'mekanism:ultimate_bin'
+        }).id('kubejs:extended/creative_bin')
+ 
+        // event.recipes.extendedcrafting.shaped_table("create:handheld_worldshaper", [
+        //     "AAABBBAAA",
+        //     "AACCBCCAA",
+        //     "ACDDCDDCA",
+        //     "BCDEEEDCB",
+        //     "BBCEEECBB",
+        //     "BCDEEEDCB",
+        //     "ACDDCDDCA",
+        //     "AACCBCCAA",
+        //     "AAABBBAAA"
+        // ], {
+        //     A: 'kubejs:storage_polyball',
+        //     B: 'kubejs:material_polyball',
+        //     C: 'kubejs:tech_polyball',
+        //     D: 'kubejs:energy_polyball',
+        //     E: 'kubejs:extreme_polyball'
+        // }).id('kubejs:extended/handheld_worldshaper')
 
         // Optional Creative Items
         // Due to the nature of the polyball system, it is flexable with what mods are loaded, as such, the items crafted with it should be as well

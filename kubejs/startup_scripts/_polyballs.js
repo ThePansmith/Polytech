@@ -17,7 +17,7 @@ global.basicpolyball = [
     ['ae2:certus_quartz_crystal', '#dcdcdc'],
     ['ae2:charged_certus_quartz_crystal', '#d3d3d3'],
     ['ae2:fluix_crystal', '#8a2be2'],
-    ['ae2:logic_processor', '#1E328D',, 128],
+    ['ae2:logic_processor', '#1E328D',null, 128],
     ['appflux:harden_insulating_resin', '#ff6347', 'ae2addon'],
     ['appflux:redstone_crystal', '#ff4500', 'ae2addon'],
     ['megacells:sky_steel_ingot', '#4682b4', 'ae2addon'],
@@ -97,7 +97,24 @@ global.basicpolyball = [
     ['create:electron_tube', '#ff6347'],
     ['create:brass_casing', '#b8860b'],
     ['tconstruct:seared_brick', '#2f4f4f'],
-    ['tconstruct:scorched_brick', '#2e2e2e']
+    ['tconstruct:scorched_brick', '#2e2e2e'],
+    ['botania:livingrock', '#a9a9a9'],
+    ['ars_nouveau:source_gem', '#dcdcdc'],
+    ['ars_nouveau:sourceberry_bush', '#8a2be2'],
+    ['ars_nouveau:manipulation_essence', '#ff4500'],
+    ['ars_nouveau:magebloom_fiber', '#32cd32'],
+    ['ars_nouveau:abjuration_essence', '#ff6347'],
+    ['occultism:otherstone', '#2f4f4f'],
+    ['occultism:spirit_attuned_gem', '#00ff7f'],
+    ['occultism:demons_dream_essence', '#ff69b4'],
+    ['botania:mana_powder', '#00fa9a'],
+    ['botania:dragonstone', '#8a2be2'],
+    ['botania:terrasteel_ingot', '#32cd32'],
+    ['botania:livingwood_log', '#8b4513'],
+    ['advgenerators:turbine_rotor_tier5', '#ff4500', null, "32"],
+    ['advgenerators:power_capacitor_tier2', '#ff6347', null, "64"],
+    ['advgenerators:iron_wiring', '#dcdcdc'],
+    ['advgenerators:controller', '#4682b4']
 ];
 
 global.tagpolyball = [
@@ -132,12 +149,17 @@ global.modpolyball = [
     ['powah', 'energy', '#2e8b57', 'powah:dielectric_casing'],
     ['tconstruct', 'material', '#4682b4', 'tconstruct:slimesteel_reinforcement'],
     ['thermal', 'tech', '#ff7f50', 'thermal:machine_frame'],
-    ['thermalendergy', 'extreme', '#ff4500', 'thermalendergy:vibrating_core']
+    ['thermalendergy', 'extreme', '#ff4500', 'thermalendergy:vibrating_core'],
+    ['botania', 'magic', '#00ff7f', 'botania:terra_plate'],
+    ['ars_nouveau', 'magic', '#8a2be2', 'ars_nouveau:source_jar'],
+    ['occultism', 'magic', '#ff6347', 'occultism:magic_lamp_empty'],
+    ['advgenerators', 'energy', '#ff4500', 'advgenerators:controller']
 ];
 
 global.superpolyball = [
     ['material', '#dcdcdc', 'extendedcrafting:nether_star_block'],
     ['tech', '#8a2be2', 'mekanismgenerators:fission_reactor_casing'],
+    ['magic', '#00ff7f', 'botania:life_essence'],
     ['storage', '#ff8c00', 'megacells:cell_component_256m'],
     ['energy', '#2e8b57', 'fluxnetworks:flux_block'],
     ['extreme', '#2f4f4f', 'industrialforegoingsouls:soul_laser_base']

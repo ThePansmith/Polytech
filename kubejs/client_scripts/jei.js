@@ -13,7 +13,7 @@ JEIEvents.hideItems(event => {
     event.hide('enderio:broken_spawner')
 
     // AE2
-    event.hide(/ae2:facade/)
+    event.hide('ae2:facade')
 
     // Mekanism
     event.hide(/mekanism:creative_fluid_tank/)
