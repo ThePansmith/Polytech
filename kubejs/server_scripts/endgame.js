@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
             H: 'mekanismgenerators:fusion_reactor_frame',
             I: 'kubejs:mekanism_polyball',
             J: 'mekanismgenerators:fusion_reactor_controller',
-            K: 'kubejs:advancedmekanism_polyball'
+            K: 'mekanism:ultimate_energy_cube'
         }).id('kubejs:extended/creative_energy_cube_2')
 
         event.recipes.extendedcrafting.shaped_table("mekanism:creative_fluid_tank", [
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
             J: 'mekanism:creative_chemical_tank',
             K: 'mekanism:ultimate_bin'
         }).id('kubejs:extended/creative_bin')
- 
+
         // event.recipes.extendedcrafting.shaped_table("create:handheld_worldshaper", [
         //     "AAABBBAAA",
         //     "AACCBCCAA",
@@ -152,20 +152,21 @@ ServerEvents.recipes(event => {
 
         // Optional Creative Items
         // Due to the nature of the polyball system, it is flexable with what mods are loaded, as such, the items crafted with it should be as well
-        if (Platform.isLoaded('tconstruct')) {
-        event.recipes.create.mixing(('create:creative_blaze_cake'),['create:blaze_cake', 'kubejs:create_polyball']).superheated()
-        event.recipes.create.mechanical_crafting("create:creative_motor", [
-            'ABBB ',
-            'CDEEE',
-            'ABBB '
-        ], {
-            A: 'mekanism:block_refined_obsidian',
-            B: 'mekanism:ingot_refined_obsidian',
-            C: 'kubejs:create_polyball',
-            D: 'createaddition:electric_motor',
-            E: 'create:shaft'
-        }).id('kubejs:extended/creative_motor')
-    }
+        if (Platform.isLoaded('create')) {
+            event.recipes.create.mixing(('create:creative_blaze_cake'), ['create:blaze_cake', 'kubejs:create_polyball']).superheated()
+            event.recipes.create.mechanical_crafting("create:creative_motor", [
+                'ABBB ',
+                'CDEEE',
+                'ABBB '
+            ], {
+                A: 'mekanism:block_refined_obsidian',
+                B: 'mekanism:ingot_refined_obsidian',
+                C: 'kubejs:create_polyball',
+                D: 'createaddition:electric_motor',
+                E: 'create:shaft'
+            }).id('kubejs:extended/creative_motor')
+        }
+
         let creativetinkers = [
             [{ "item": 'tconstruct:creative_slot', "nbt": { "slot": "upgrades" } }, 'tconstruct:molten_iron'],
             [{ "item": 'tconstruct:creative_slot', "nbt": { "slot": "defense" } }, 'tconstruct:molten_copper'],
@@ -189,5 +190,60 @@ ServerEvents.recipes(event => {
                 })
             })
         }
+
+        if (Platform.isLoaded('botania')) {
+            event.custom({
+                "type": "botania:runic_altar",
+                "ingredients": [
+                    {
+                        "item": "kubejs:botania_polyball"
+                    },
+                    {
+                        "item": "kubejs:livingrock_polyball"
+                    },
+                    {
+                        "item": "kubejs:livingrock_polyball"
+                    }
+                ],
+                "mana": 500000,
+                "output": {
+                    "count": 1,
+                    "item": "botania:creative_pool"
+                }
+            })
+        }
+    }
+
+    if (Platform.isLoaded('ars_nouveau')) {
+        event.custom({
+            "type": "ars_nouveau:enchanting_apparatus",
+            "keepNbtOfReagent": false,
+            "pedestalItems": [
+                {
+                    "item": 'kubejs:ars_nouveau_polyball'
+                },
+                {
+                    "item": 'kubejs:ars_nouveau_polyball'
+                },
+                {
+                    "item": 'kubejs:ars_nouveau_polyball'
+                },
+                {
+                    "item": 'kubejs:ars_nouveau_polyball'
+                }
+            ],
+            "reagent": {
+                "item": 'ars_nouveau:source_jar'
+            },
+            "output": {
+                "item": 'ars_nouveau:creative_source_jar'
+            },
+            // in 1.21
+            // "result": {
+            //     "count": 1,
+            //     "id": 'ars_nouveau:creative_source_jar'
+            // },
+            "sourceCost": 0
+        })
     }
 });
