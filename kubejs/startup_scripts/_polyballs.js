@@ -153,14 +153,14 @@ global.modpolyball = [
     ['botania', 'magic', '#00ff7f', 'botania:terra_plate'],
     ['ars_nouveau', 'magic', '#8a2be2', 'ars_nouveau:source_jar'],
     ['occultism', 'magic', '#ff6347', 'occultism:magic_lamp_empty'],
-    ['advgenerators', 'energy', '#ff4500', 'advgenerators:controller']
+    ['advgenerators', 'energy', '#ff4500', 'advgenerators:fuel_turbine_controller']
 ];
 
 global.superpolyball = [
     ['material', '#dcdcdc', 'extendedcrafting:nether_star_block'],
     ['tech', '#8a2be2', 'mekanismgenerators:fission_reactor_casing'],
     ['magic', '#00ff7f', 'botania:life_essence'],
-    ['storage', '#ff8c00', 'megacells:cell_component_256m'],
+    ['storage', '#ff8c00', 'ae2:cell_component_256k'],
     ['energy', '#2e8b57', 'fluxnetworks:flux_block'],
     ['extreme', '#2f4f4f', 'industrialforegoingsouls:soul_laser_base']
 ];
